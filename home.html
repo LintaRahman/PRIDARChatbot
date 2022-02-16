@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery.js">
+</script>
+<script type="text/javascript" src="jquery-ui.min.js">
+</script>
+<script type="text/javascript" src="bootstrap.min.js">
+</script>
+<script type="text/javascript" src="Customjs.js">
+</script>
+<script type="text/javascript" src="contactform.js">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+PRIDAR Chatbot | A chatbot to help software engineers meet the requirements of the NHS.
+</title>
+<link rel="stylesheet"  href="bootstrap.css" type="text/css" media="screen"/>
+<link rel="stylesheet"  href="style.css" type="text/css" media="screen"/>
+<!--[if lte IE 8]>
+<link rel="stylesheet"  href="menuie.css" type="text/css" media="screen"/>
+<link rel="stylesheet"  href="vmenuie.css" type="text/css" media="screen"/>
+<![endif]-->
+<script type="text/javascript" src="totop.js">
+</script>
+<!--[if IE 7]>
+<style type="text/css" media="screen">
+#ttr_vmenu_items  li.ttr_vmenu_items_parent {margin-left:-16px;font-size:0px;}
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="html5shiv.js">
+</script>
+<script type="text/javascript" src="respond.min.js">
+</script>
+<![endif]-->
+</head>
+<body class="Home">
+<div class="totopshow">
+<a href="#" class="back-to-top"><img alt="Back to Top" src="images/gototop0.png"/></a>
+</div>
+<header id="ttr_header">
+<div id="ttr_header_inner">
+<div class="innermenu"><nav id="ttr_menu" class="navbar-default navbar">
+   <div id="ttr_menu_inner_in">
+<div class="menuforeground">
+</div>
+<div class="ttr_menushape1">
+   <div class="html_content">
+     <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/download.png" style="max-width:237px;max-height:304px;" /></a></div>
+   </div>
+<div id="navigationmenu">
+<div class="navbar-header">
+<button id="nav-expander" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+<span class="sr-only">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+<span class="icon-bar">
+</span>
+</button>
+</div>
+<div class="menu-center collapse navbar-collapse">
+   <ul class="ttr_menu_items nav navbar-nav navbar-right">
+      <li class="ttr_menu_items_parent dropdown active"><a href="home.html" class="ttr_menu_items_parent_link_active"><span class="menuchildicon" ></span>Home</a>
+      <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="requirements.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Requirements</a>
+         <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="HCI.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>HCI</a>
+         <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="design.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Design</a>
+         <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="implementation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Implementation</a>
+         <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="about-us.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>About Us</a>
+      <hr class ="horiz_separator"/>
+      </li>
+      <li class="ttr_menu_items_parent dropdown"><a href="blog.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Blog</a>
+        <hr class ="horiz_separator"/>
+        </li>
+      <!-- <li class="ttr_menu_items_parent dropdown"><a href="services.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Services</a>
+      <hr class ="horiz_separator"/>
+      </li> -->
+      <!-- <li class="ttr_menu_items_parent dropdown"><a href="gallery.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Gallery</a>
+      <hr class ="horiz_separator"/>
+      </li> -->
+      <!-- <li class="ttr_menu_items_parent dropdown"><a href="contact.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Contact</a>
+      <hr class ="horiz_separator"/>
+      </li> -->
+      </ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+
+
+<!-- <style>
+  #overlayText {
+  position:absolute;
+  top:30%;
+  left:20%;
+  z-index:1;
+  }
+  
+  #topText {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+  }
+  </style> -->
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="images/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video> -->
+
+<!-- <video id="video" width="770" height="882" onclick="play();">
+  <source src="images/video.mp4" type="video/mp4" />
+</video> -->
+
+<video playsinline autoplay muted loop id="bgvid">
+  <source src="images/video.mp4" type="video/mp4">
+</video>
+
+<!-- <video id="background-video" autoplay loop muted poster="images/video.mp4">
+  <source src="images/video.mp4" type="video/mp4">
+</video> -->
+
+<div class="ttr_headershape01">
+<div class="html_content">
+  <p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;">
+    <span style="font-family:'Ubuntu','Arial';font-size:4.286em;color:rgb(0,203,203,1);">PRIDAR</span><span style="font-family:'Ubuntu','Arial';font-size:4.286em;color:rgba(255,255,255);"> Chatbot</span></p><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><br style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgba(255,101,1,1);" /></p><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgb(250, 246, 246);">To get the most out of your Agency, learn more about the latest features.</span></p></div>
+</div>
+</header>
+
+<style>
+div  .videoContainer {
+    background-color:transparent;
+background:rgba(255,255,255,0);
+background-clip:padding-box;border-radius:0px 0px 0px 0px;
+border:solid #000000;
+border:solid rgba(0,0,0,1);
+border-width:0px 0px 0px 0px;
+box-shadow:none;
+/* left:7.39%; */
+right:auto;
+top:255px;
+width:1003px;
+min-height:150px;
+position:absolute;
+display:block;
+transform:rotate(0deg);
+-moz-transform:rotate(0deg);
+-webkit-transform:rotate(0deg);
+-o-transform:rotate(0deg);
+box-sizing:border-box;
+word-wrap:break-word;
+  }
+</style>
+
+<!-- <div class="videoContainer">
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="images/video.mp4" type="video/mp4">
+  </video>
+</div> -->
+
+
+
+
+
+
+
+
+<div id="ttr_page" class="container">
+<div id="ttr_content_and_sidebar_container">
+<div id="ttr_content">
+<div id="ttr_content_margin"class="container-fluid">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="ttr_Home_html_row0 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column00">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<!-- <div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(78,78,78,1);">We create </span><span style="font-family:'Ubuntu','Arial';font-weight:700;font-size:2.5em;color:rgba(0,203,203,1);">Agency</span><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(0,203,203,1);"> </span><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(78,78,78,1);">for your solutions</span></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><br style="font-family:'Open Sans','Arial';font-size:1.714em;" /></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">We created our PRIDAR chatbot to help answer question about the application and deployment </span></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">of AI software in the NHS.</span></p></div> -->
+
+<div class="html_content"><p class="gradtitle" style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">- Abstract -</span></p>
+  <p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">We created our PRIDAR chatbot to help answer question about the application and deployment of AI software in the NHS. </span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row1 row">
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column10">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/43.jpg" style="max-width:1000px;max-height:662px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column11">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0em 0em 0em 0em;font-weight:700;font-size:1.714em;"><span style="font-family:'Roboto','Segoe UI';font-weight:400;font-size:1.786em;color:rgba(52,52,52,1);">Discover the Advantages</span></p><p style="margin:0em 0em 0em 0em;font-weight:700;font-size:1.714em;"><br style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(52,52,52,1);" /></p><p style="margin:0em 0em 0em 0em;font-weight:700;font-size:1.714em;"><br style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(52,52,52,1);" /></p><p style="margin:0em 0em 0em 0em;line-height:1.76056338028169;font-weight:700;font-size:1.714em;"><span style="font-family:'Open Sans','Segoe UI';font-weight:400;font-size:1.071em;color:rgba(105,105,105,1);">Pellentesque quis eros vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ip. Pellentesque venenatis, libero vel euismod lobortis, mi illt jotore metus luctus augue, eget dapibus elit ni eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iacsdipiscing neque, non congue massa euismod quisscing elit.</span></p><p style="margin:0.71em 0.36em 0em 0em;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Ea mei nostrum imperdiet deterruisset, mei ludus effici. Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi. Proin eu diam lorm, elerisque sapien.</span></p><p style="margin:0.71em 0.36em 0em 0em;line-height:1.76056338028169;"><br style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(52,52,52,1);" /></p><p style="margin:0.71em 0.36em 0em 0em;line-height:1.76056338028169;"><span><br style="color:rgba(52,52,52,1);" /><a HREF="#" target="_self" class="btn btn-sm btn-default">Read More</a></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row2 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column20">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);">We are here to give you the </span><span style="font-family:'Roboto','Arial';font-weight:700;font-size:2.143em;color:rgba(0,203,203,1);">Best</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row3 row">
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column30">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0em 0em 0.36em 0em;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/44.jpg" style="max-width:800px;max-height:472px;" /></span></span><br style="font-family:'Roboto','Arial';font-size:1.429em;color:rgba(78,78,78,1);" /></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column31">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0em 0em 0.36em 0em;line-height:1.76056338028169;"><span style="font-family:'Roboto','Arial';font-size:1.786em;color:rgba(78,78,78,1);">Our Skills and Proffesional </span><span style="font-family:'Roboto','Arial';font-weight:700;font-size:1.786em;color:rgba(0,203,203,1);">Work</span><span style="font-family:'Roboto','Arial';font-size:1.786em;color:rgba(78,78,78,1);"> With Happy Customers</span></p><p style="margin:1.43em 0em 0.36em 0em;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Ea mei nostrum imperdiet deterruisset, mei ludus effici. Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi.mei nostrum imperdiet deterruisset, mei ludus effici. </span><span style="font-family:'Open Sans','Segoe UI';font-weight:700;font-size:1.071em;color:rgba(0,203,203,1);">Sea summo </span><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim.</span></p><p style="margin:1.43em 0em 0.36em 0em;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">quo et aliquid ornatus delicatissimi.mei nostrum imperdiet deterruisset, mei ludus effici. Sea summo mazim ex, ea errem eleifend definitionem vim.</span></p><p style="margin:1.43em 0em 0.36em 0em;line-height:1.76056338028169;"><span><a HREF="#" target="_self" class="btn btn-sm btn-default">See Now</a></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row4 row">
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column40">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;"><span style="font-family:'Roboto','Segoe UI';font-weight:700;font-size:1.786em;color:rgba(0,203,203,1);">About</span><span style="font-family:'Roboto','Segoe UI';font-weight:500;font-size:1.786em;color:rgba(250,183,95,1);"> </span><span style="font-family:'Roboto','Segoe UI';font-size:1.786em;color:rgba(255,255,255,1);">Agency Studio</span></p><p style="margin:0.71em 0.36em 0.36em 0em;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.429em;color:rgba(255,255,255,1);">We are an Creative Agency specializes in all forms of media.</span></p><p style="margin:2.14em 0.36em 0.36em 0em;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(255,255,255,1);">Fusce quis nisl et lectus semper commodo. Donec dignissim arcu nec purus tempor, quis consectetur risus viverra. Donec et efficitur lacus, at dignissim purus</span><span style="font-family:'Open Sans','Segoe UI';font-size:1.143em;color:rgba(255,255,255,1);">.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column41">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="text-align:Center;"><span style="font-size:10.714em;color:rgba(255,255,255,1);">24 / 7</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row5 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column50">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0em 2.14em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);">Our Features</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row6 row">
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column60">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 2.14em 0em;"><span><img src="images/45.png" style="max-width:75px;max-height:75px;" /></span></span><span style="font-family:'Roboto','Segoe UI';font-size:1.429em;color:rgba(78,78,78,1);">Service</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros vestibulum turpis ac, pulvinar odio.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column61">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 2.14em 0em;"><span><img src="images/46.png" style="max-width:75px;max-height:75px;" /></span></span><span style="font-family:'Roboto','Segoe UI';font-size:1.429em;color:rgba(78,78,78,1);">Service</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros vestibulum turpis ac, pulvinar odio.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column62">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 2.14em 0em;"><span><img src="images/47.png" style="max-width:75px;max-height:75px;" /></span></span><span style="font-family:'Roboto','Segoe UI';font-size:1.429em;color:rgba(78,78,78,1);">Service</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros vestibulum turpis ac, pulvinar odio.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column63">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 2.14em 0em;"><span><img src="images/48.png" style="max-width:75px;max-height:75px;" /></span></span><span style="font-family:'Roboto','Segoe UI';font-size:1.429em;color:rgba(78,78,78,1);">Service</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Segoe UI';font-size:1.071em;color:rgba(105,105,105,1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros vestibulum turpis ac, pulvinar odio.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row7 row">
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column70">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">14,857</span></p><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0.71em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/49.png" style="max-width:80px;max-height:80px;" /></span></span><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">Clean code lines</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column71">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">2,200</span></p><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0.71em 0em 1.43em 0em;"><span><img class="ttr_uniform" src="images/50.png" style="max-width:56px;max-height:64px;" /></span></span><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">Satisfied Customers</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column72">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">194</span></p><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0.71em 0em 1.43em 0em;"><span><img class="ttr_uniform" src="images/51.png" style="max-width:64px;max-height:64px;" /></span></span><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">Working Days</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column73">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">645</span></p><p style="margin:0.36em 0.36em 0.71em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0.71em 0em 2.14em 0em;"><span><img class="ttr_uniform" src="images/52.png" style="max-width:31px;max-height:55px;" /></span></span><span style="font-family:'Open Sans','Arial';font-size:1.429em;color:rgba(255,255,255,1);">Theme Options</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row8 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column80">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);">Recent Work Here</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row9 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column90">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0.48em 0em 0.48em 0em;text-align:Center;font-size:1.143em;"><span style="font-family:'Open Sans','Times New Roman';color:rgba(105,105,105,1);">Praesent vitae sapien nisi, volutpat iaculis dui.</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row10 row">
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column100">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/53.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column101">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/54.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column102">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/55.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column103">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/56.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row11 row">
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column110">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/57.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column111">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/58.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column112">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/59.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-xs-block">
+</div>
+<div class="post_column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="ttr_Home_html_column113">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/60.jpg" style="max-width:400px;max-height:250px;" /></span></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row12 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column120">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="text-align:Center;"><span><a HREF="#" target="_self" class="btn btn-sm btn-default">View More</a></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_Home_html_row13 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column130">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0em 0.36em 0em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:1.786em;color:rgba(255,255,255,1);">Customers Says</span></p><p style="margin:0em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:1.43em 0em 1.43em 0em;"><span><img src="images/61.png" style="max-width:91.0112359550562px;max-height:90px;" /></span></span><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(255,255,255,1);">Design is a quite astonishing, great design convert sales. Feel pretty comfortable for adapting it to projects of different categories. Will be using for my next client.</span></p><p style="margin:1.43em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(255,255,255,1);">Victor BuiCo - </span><span style="font-family:'Open Sans','Arial';font-weight:700;font-size:1.071em;color:rgba(255,255,255,1);">Founder IT</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+
+<div class="ttr_About-Us_html_row3 row">
+  <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="ttr_About-Us_html_column30">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">Our Creative Team</span></p></div>
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div style="clear:both;"></div>
+  </div>
+  </div>
+  <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+  </div>
+  </div>
+
+<!-- <div class="container">
+  <figure class="snip1376">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+    <figcaption>
+      <h2>Linguina Nettlewater</h2>
+      <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello? </p>
+      <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a>
+        <a href="#"> <i class="ion-social-twitter-outline"></i></a>
+        <a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+      </div>
+    </figcaption>
+  </figure>
+  <figure class="snip1376 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+    <figcaption>
+      <h2>Max Conversion</h2>
+      <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+      <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a>
+        <a href="#"> <i class="ion-social-twitter-outline"></i></a>
+        <a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+      </div>
+    </figcaption>
+  </figure>
+  <figure class="snip1376"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample38" />
+    <figcaption>
+      <h2>Caspian Bellevedere</h2>
+      <p>If you want to stay dad you've got to polish your image. I think the image we need to create for you is "repentant but learning".</p>
+      <div class="icons"><a href="#"><i class="ion-social-reddit-outline"></i></a>
+        <a href="#"> <i class="ion-social-twitter-outline"></i></a>
+        <a href="#"> <i class="ion-social-vimeo-outline"></i></a>
+      </div>
+    </figcaption>
+  </figure>
+  <script>
+    $(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+  </script>
+</div> -->
+
+<!-- <div class="container">
+<figure class="snip1336">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+  <figcaption>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" />
+    <h2>Hans Down<span>Engineer</span></h2>
+    <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+    <a href="#" class="follow">Follow</a>
+    <a href="#" class="info">More Info</a>
+  </figcaption>
+</figure>
+<figure class="snip1336 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" />
+  <figcaption>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="profile-sample2" class="profile" />
+    <h2>Wisteria Widget<span>Photographer</span></h2>
+    <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+    <a href="#" class="follow">Follow</a>
+    <a href="#" class="info">More Info</a>
+  </figcaption>
+</figure>
+<figure class="snip1336"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg" alt="sample69" />
+  <figcaption>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+    <h2>Desmond Eagle<span>Accountant</span></h2>
+    <p>If you want to stay dad you've got to polish your image. I think the image we need to create for you is "repentant but learning".</p>
+    <a href="#" class="follow">Follow</a>
+    <a href="#" class="info">More Info</a>
+  </figcaption>
+</figure>
+<script>
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+</script>
+</div> -->
+
+
+<!-- <div class="card" data-state="#about">
+  <div class="card-header">
+    <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+    <img class="card-avatar" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="avatar" />
+    <h1 class="card-fullname">William Rocheald</h1>
+    <h2 class="card-jobtitle">UI Developer</h2>
+  </div>
+  <div class="card-main">
+    <div class="card-section is-active" id="about">
+      <div class="card-content">
+        <div class="card-subtitle">ABOUT</div>
+        <p class="card-desc">Whatever tattooed stumptown art party sriracha gentrify hashtag intelligentsia readymade schlitz brooklyn disrupt.
+        </p>
+      </div>
+      <div class="card-social">
+        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+        <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+            <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+            <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+      </div>
+    </div>
+    <div class="card-section" id="experience">
+      <div class="card-content">
+        <div class="card-subtitle">WORK EXPERIENCE</div>
+        <div class="card-timeline">
+          <div class="card-item" data-year="2014">
+            <div class="card-item-title">Front-end Developer at <span>JotForm</span></div>
+            <div class="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
+          </div>
+          <div class="card-item" data-year="2016">
+            <div class="card-item-title">UI Developer at <span>GitHub</span></div>
+            <div class="card-item-desc">Developed new conversion funnels and disrupt.</div>
+          </div>
+          <div class="card-item" data-year="2018">
+            <div class="card-item-title">Illustrator at <span>Google</span></div>
+            <div class="card-item-desc">Onboarding illustrations for App.</div>
+          </div>
+          <div class="card-item" data-year="2020">
+            <div class="card-item-title">Full-Stack Developer at <span>CodePen</span></div>
+            <div class="card-item-desc">Responsible for the encomposing brand expreience.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-section" id="contact">
+      <div class="card-content">
+        <div class="card-subtitle">CONTACT</div>
+        <div class="card-contact-wrapper">
+          <div class="card-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" /></svg>
+            Algonquin Rd, Three Oaks Vintage, MI, 49128
+          </div>
+          <div class="card-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>(269) 756-9809</div>
+          <div class="card-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <path d="M22 6l-10 7L2 6" /></svg>
+            william@rocheald.com
+          </div>
+          <button class="contact-me">WORK TOGETHER</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-buttons">
+      <button data-section="#about" class="is-active">ABOUT</button>
+      <button data-section="#experience">EXPERIENCE</button>
+      <button data-section="#contact">CONTACT</button>
+    </div>
+  </div>
+</div>
+
+<script type="text/babel">
+  const buttons = document.querySelectorAll(".card-buttons button");
+const sections = document.querySelectorAll(".card-section");
+const card = document.querySelector(".card");
+
+const handleButtonClick = (e) => {
+  const targetSection = e.target.getAttribute("data-section");
+  const section = document.querySelector(targetSection);
+  targetSection !== "#about"
+    ? card.classList.add("is-active")
+    : card.classList.remove("is-active");
+  card.setAttribute("data-state", targetSection);
+  sections.forEach((s) => s.classList.remove("is-active"));
+  buttons.forEach((b) => b.classList.remove("is-active"));
+  e.target.classList.add("is-active");
+  section.classList.add("is-active");
+};
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", handleButtonClick);
+});
+</script> -->
+
+<div class="ttr_Home_html_row14 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_Home_html_column140">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:1.786em;color:rgba(52,52,52,1);">Do you like to share your Project With us?</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(52,52,52,1);">Quisque dignissim, enim quis placerat pulvinar, ligula mi dictum mauris, in rhoncus turpis leo vel enim. Vestibulum ante ipsum cibus orci luctus et ultrices posuere cubilia CuraeDonec dapibus, nisl tristique malesuada dignissim, nibh ante pulvinar tellus.</span></p><p style="margin:2.14em 0em 0.36em 0em;text-align:Center;"><span><a HREF="#" target="_self" class="btn btn-sm btn-default">Click Now</a></span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div style="clear:both;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+</div>
+</div>
+<div style="clear:both">
+</div>
+</div>
+</div>
+<div style="height:0px;width:0px;overflow:hidden;"></div>
+
+
+
+<div class="ttr_About-Us_html_row3 row">
+  <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="ttr_About-Us_html_column30">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="html_content"><p class="text" style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">Our Creative Team</span></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:1.6em;color:rgba(52,52,52,1);">Meet our amazing team members</span></p></div>
+
+  </div>
+
+  </div>
+  
+<style>
+  /* body {
+  font-family: tahoma;
+  height: 100vh;
+  background-image: url(https://picsum.photos/g/3000/2000);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+} */
+
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 0px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  /* background-color: #008181; */
+  background: url("images/grad.jpeg");
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #008181;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 7px #64bfc2;
+  transform: scale(1.2);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  /* color: #4e5052; */
+  background: url("images/grad.jpeg");
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  margin: 0;
+  /* background-color: #008181; */
+  background: url("images/grad.jpeg");
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 12px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+/* .our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+} */
+
+</style>
+<!-- <div class="container">
+  <section>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Michele Miller</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Patricia Knott</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Justin Ramos</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Mary Huntley</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div> -->
+
+<style>
+section {
+  /* font-family: tahoma; */
+  height: 90vh;
+  /* background-clip: src("images/video.mp4"); */
+  /* background-image: url(https://picsum.photos/g/3000/2000); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+section {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  /* min-height: 100%; */
+  /* background: #009688; */
+  background: url("images/video.mp4"); 
+  background-repeat: repeat;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+.card {
+  width: 350px;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+.card:after {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 200px;
+  background: cadetblue;
+  position: absolute;
+  animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.badgescard {
+  padding: 1px 2px;
+  border-radius: 3px;
+  background-color: #ECECEC;
+  width: 350px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: -1;
+  left: 20px;
+  bottom: 10px;
+  animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+  
+}
+.badgescard span {
+  font-size: 1.6em;
+  margin: 0px 6px;
+  opacity: 0.6;
+}
+
+.firstinfo {
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+}
+.firstinfo img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.firstinfo .profileinfo {
+  padding: 0px 20px;
+}
+.firstinfo .profileinfo h1 {
+  font-size: 1.8em;
+  
+}
+.firstinfo .profileinfo h3 {
+  font-size: 1.2em;
+  color: #009688;
+  font-style: italic;
+}
+.firstinfo .profileinfo p.bio {
+  padding: 10px 0px;
+  color: #5A5A5A;
+  line-height: 1.8;
+  font-style: initial;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.socialsbutton {border-radius: 50%;}
+
+button:hover {
+  transform: scale(1.1);
+    margin-top: 0px;
+    -moz-box-shadow: 0px 0px 4px 1px grey;
+    -webkit-box-shadow: 0px 0px 4px 1px grey;
+    box-shadow: 0px 0px 4px 1px  grey;
+}
+
+@keyframes animatop {
+  0% {
+    opacity: 0;
+    bottom: -500px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+@keyframes animainfos {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -42px;
+  }
+}
+@keyframes rotatemagic {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    top: -24px;
+    left: -253px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    top: -24px;
+    left: -78px;
+  }
+}
+</style>
+
+
+
+<section>
+
+  <div class="content">
+    <div class="card">
+      <div class="our-team">
+      <div class="firstinfo">
+        <div class="picture">
+        <img class="img-fluid" src="images/blank.jpg"/></div>
+        <div class="profileinfo">
+          <h1>Adel Mouffok</h1>
+          <h3>Team Member</h3>
+          <p class="bio">-------------------------------------------------------------------------------</p>
+        </div>
+      </div>
+      <ul class="social">
+        <li><button class="socialsbutton"><a href="mailto:zcablra@ucl.ac.uk" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
+      </ul>
+      </div>
+    </div>
+    <!-- <div class="badgescard"> 
+      <span class="devicons devicons-django"><img src = "images/footerlinkedin.png"></span>
+        <span class="devicons devicons-python"> <img src = "images/footerfacebook.png" ></span>
+        <span class="devicons devicons-codepen"></span>
+        <span class="devicons devicons-javascript_badge"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-gulp"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-angular"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-sass"> </span>
+      </div> -->
+      
+  </div>
+  <div class="content">
+    <div class="card">
+      <div class="our-team">
+      <div class="firstinfo">
+        <div class="picture">
+        <img class="img-fluid" src="images/veil.jpg"/></div>
+        <div class="profileinfo">
+          <h1 style="text-align:Center;">Linta Rahman</h1>
+          <h3 style="text-align:Center;">Team Member</h3>
+          <p class="bio" style="text-align:Center;">A second year student at UCL.
+            <br> Blog developer and website designer.</p>
+        </div>
+      </div>
+      <ul class="social">
+        <li><button class="socialsbutton"><a href="mailto:linta.rahman.20@ucl.ac.uk" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
+        <!-- <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li> -->
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://github.com/LintaRahman" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
+      </ul>
+      
+      </div>
+    </div>
+    <!-- <div class="badgescard"> 
+      <span class="devicons devicons-django"><img src = "images/footerlinkedin.png"></span>
+        <span class="devicons devicons-python"> <img src = "images/footerfacebook.png" ></span>
+        <span class="devicons devicons-codepen"></span>
+        <span class="devicons devicons-javascript_badge"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-gulp"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-angular"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-sass"> </span>
+      </div> -->
+      
+  </div>
+  <div class="content">
+    <div class="card">
+      <div class="our-team">
+      <div class="firstinfo">
+        <div class="picture">
+        <img class="img-fluid" src="images/blank.jpg"/></div>
+        <div class="profileinfo">
+          <h1>Fraser Thomson</h1>
+          <h3>Team Member</h3>
+          <p class="bio">-------------------------------------------------------------------------------</p>
+        </div>
+      </div>
+      <ul class="social">
+        <li><button class="socialsbutton"><a href="mailto:zcablra@ucl.ac.uk" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
+      </ul>
+      
+      </div>
+    </div>
+    <!-- <div class="badgescard"> 
+      <span class="devicons devicons-django"><img src = "images/footerlinkedin.png"></span>
+        <span class="devicons devicons-python"> <img src = "images/footerfacebook.png" ></span>
+        <span class="devicons devicons-codepen"></span>
+        <span class="devicons devicons-javascript_badge"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-gulp"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-angular"><img src ="images/footertwitter.png"></span>
+        <span class="devicons devicons-sass"> </span>
+      </div> -->
+      
+  </div>
+</section>
+<!-- </div> -->
+
+<!-- <footer id="ttr_footer">
+<div class="ttr_footerHome_html_row0 row">
+<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="ttr_footerHome_html_column00">
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div class="html_content"><p style="margin:0em 0em 0.36em 0em;text-align:Center;"><br style="font-family:'Open Sans','Arial';font-size:1.786em;color:rgba(255,255,255,1);" /></p><p style="margin:0em 0em 0.36em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:1.786em;color:rgba(255,255,255,1);">Stay Connected With Us</span></p></div>
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+</div>
+</div>
+<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+</div>
+</div>
+<div class="ttr_footer_bottom_footer">
+<div class="ttr_footer_bottom_footer_inner">
+<div id="ttr_footer_designed_by_links">
+<a href="http://templatetoaster.com" target="_self" >
+Website
+</a>
+<span id="ttr_footer_designed_by">
+Designed With TemplateToaster
+</span>
+</div>
+<a href="http://www.facebook.com/TemplateToaster" class="ttr_footer_facebook" target="_self" >
+</a>
+<a href="http://www.templatetoaster.com"class="ttr_footer_linkedin" target="_self" >
+</a>
+<a href="http://twitter.com/templatetoaster"class="ttr_footer_twitter" target="_self" >
+</a>
+<a href="http://www.templatetoaster.com"class="ttr_footer_googleplus" target="_self" >
+</a>
+</div>
+</div>
+<video autoplay muted loop id="myVideo">
+  <source src="images/video.mp4" type="video/mp4">
+</video>
+</footer> -->
+
+<style>
+  .footerIcons{
+    width: 20px;
+    height: auto;
+  }
+</style>
+<footer id="ttr_footer">
+  <div class="margin_collapsetop"></div>
+   <div id="ttr_footer_inner">
+  <div class="ttr_footer-widget-cell_inner_widget_container">
+  <div class="ttr_footer-widget-cell_inner0 container row">
+  <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+  <div class="footercellcolumn1">
+  <div class="margin_collapsetop"></div>
+  <div class="html_content"><h4 style="margin:16px 0px 0px 0px;line-height:2.02em;"><span style="font-weight:900;font-size:1.158em;color:rgba(243,243,243,1);">Site Info</span></h4><p style="line-height:1.93em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">This is the website for UCL Year2 2021-2022 COMP0016 Team-10: PRIDAR, which introduces the team project and contains all the portfolios.</span></p></div>
+  <div class="margin_collapsetop"></div>
+  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Get In Touch</span></h4><p style="line-height: normal;"><img style="margin:0px 15px 0px 0px;" src="images/Facebook.png" /><img style="margin:0px 15px 0px 0px;" src="images/Twitter.png" /><img style="margin:0px 15px 0px 0px;" src="images/LinkedIn.png" /></p></div>
+  <div class="margin_collapsetop"></div>
+  <div class="margin_collapsetop"></div>
+  </div>
+  </div>
+  <div class=" visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div>
+
+  <div class=" visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div>
+  <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+  <div class="footercellcolumn3">
+  <div class="margin_collapsetop"></div>
+  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Project Supporters</span></h4>
+    <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/footnhs.jpeg" width="100" /></a>
+    <a href="https://www.ucl.ac.uk/" target="_blank"><img class="ttr_uniform" src="images/ucl.jpg" width="130" /></a>
+<p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">A lot of thanks to our company partner </span></p><p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">NHS and Dr. Joseph Connor especially.</span></p>
+  </div>
+  <div class="margin_collapsetop"></div>
+  </div>
+  </div>
+  <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+    <div class="footercellcolumn2">
+    <div class="margin_collapsetop"></div>
+    <div class="html_content"><h4 style="margin:16px 0px 0px 0px;line-height:1.66em;"><span style="font-weight:900;font-size:0.947em;color:rgba(243,243,243,1);">Pages</span></h4><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Home</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">About</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Contact</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Blog</span></p></div>
+    <div class="margin_collapsetop"></div>
+    </div>
+    </div> -->
+  <!-- <div class=" visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div> -->
+  <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+  <div class="footercellcolumn4">
+  <div class="margin_collapsetop"></div>
+  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Get In Touch</span></h4><p style="line-height: normal;"><img style="margin:0px 15px 0px 0px;" src="images/Facebook.png" /><span style="color:rgba(203,203,203,1);">Facebook</span></p><p style="line-height: normal;"><img style="margin:0px 15px 0px 0px;" src="images/Twitter.png" /><span style="color:rgba(203,203,203,1);">Twitter</span></p><p style="line-height: normal;"><img style="margin:0px 15px 0px 0px;" src="images/LinkedIn.png" /><span style="color:rgba(203,203,203,1);">LinkedIn</span></p></div>
+  <div class="margin_collapsetop"></div>
+  </div>
+  </div> -->
+  
+    <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+    <div class="footercellcolumn2">
+    <div class="margin_collapsetop"></div>
+    <div class="html_content"><h4 style="margin:16px 0px 0px 0px;line-height:1.66em;"><span style="font-weight:900;font-size:0.947em;color:rgba(243,243,243,1);">Pages</span></h4><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Home</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">About</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Contact</span></p><p style="line-height:2.07em;"><span style="color:rgba(179,179,179,1);">Blog</span></p></div>
+    <div class="margin_collapsetop"></div>
+    </div>
+    </div> -->
+  <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+    <div class="footercellcolumn4">
+      <div class="margin_collapsetop"></div>
+      <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">        Quick Links</span></h4>
+        <p><img class="footerIcons" src="images/home.png"><a href="home.html"> Home</a></p>
+        <p><img class="footerIcons" src="images/req.png"><a href="home.html"> Requirements</a></p>
+        <p><img class="footerIcons" src="images/hci.png"><a href="HCI.html"> HCI</a></p>
+        <p><img class="footerIcons" src="images/design.png"><a href="design.html"> Design</a></p>
+        <p><img class="footerIcons" src="images/impl.png"><a href="implementation.html">Implementation</a></p>
+        <p><img class="footerIcons" src="images/about.png"><a href="about-us.html">About Us</a></p>
+        <p><img class="footerIcons" src="images/blog.png"><a href="blog.html">Blog</a></p>
+        
+        
+        </div>
+      <div class="margin_collapsetop"></div>
+    </div>
+    </div>
+  </div>
+  <!-- <div class=" visible-lg-block d-xl-block d-lg-block visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div> -->
+  <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+    <div class="footercellcolumn5">
+      <div class="margin_collapsetop"></div>
+      <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">        Quick Links</span></h4>
+        <ul>
+          <li><img class="footerIcons" src="images/home.png"><a href="home.html"> Home</a></li>
+          <li><img class="footerIcons" src="images/req.png"><a href="requirements.html"> Requirements</a></li>
+          <li><img class="footerIcons" src="images/hci.png"><a href="HCI.html"> HCI</a></li>
+          <li><img class="footerIcons" src="images/design.png"><a href="design.html"> Design</a></li>
+          <li><img class="footerIcons" src="images/impl.png"><a href="implementation.html">Implementation</a></li>
+          <li><img class="footerIcons" src="images/about.png"><a href="about-us.html">About Us</a></li>
+          <li><img class="footerIcons" src="images/blog.png"><a href="blog.html">Blog</a></li>
+        </ul>
+        </div>
+      <div class="margin_collapsetop"></div>
+    </div>
+    </div> -->
+  
+  <!-- <div class=" visible-lg-block d-xl-block d-lg-block visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear:both;width:0px;"></div> -->
+  </div>
+  </div>
+  <div class="ttr_footer_bottom_footer">
+  <div class="ttr_footer_bottom_footer_inner">
+  <div class="ttr_footer_element_alignment container">
+  </div>
+  <div id="ttr_footer_designed_by_links">
+  <!-- <a href="http://templatetoaster.com" target="_self" >
+  Website
+  </a> -->
+  <span id="ttr_footer_designed_by">
+  @2022 All Rights Reserved
+  </span>
+  </div>
+  </div>
+  </div>
+  </div>
+  </footer>
+
+<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-bottom-collapse: separate;"></div>
+<script type="text/javascript">
+WebFontConfig = {
+google: { families: [ 'Roboto:700','Ubuntu','Ubuntu:700','Open+Sans','Roboto','Open+Sans:700','Roboto:500'] }
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.0.31/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})();
+</script>
+</body>
+</html>
