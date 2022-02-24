@@ -37,6 +37,15 @@ PRIDAR Chatbot | A chatbot to help software engineers meet the requirements of t
 <![endif]-->
 </head>
 <body class="Home">
+  <div class="se-pre-con"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script>
+$(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");;
+});
+</script>
 <div class="totopshow">
 <a href="#" class="back-to-top"><img alt="Back to Top" src="images/gototop0.png"/></a>
 </div>
@@ -63,15 +72,45 @@ PRIDAR Chatbot | A chatbot to help software engineers meet the requirements of t
 </span>
 </button>
 </div>
+<!-- <style>
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+</style>
+<div class="dropdown-content">
+  <a href="https://blog.hubspot.com/">Blog</a>
+  <a href="https://academy.hubspot.com/">Academy</a>
+  <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+  </div> -->
 <div class="menu-center collapse navbar-collapse">
    <ul class="ttr_menu_items nav navbar-nav navbar-right">
       <li class="ttr_menu_items_parent dropdown active"><a href="home.html" class="ttr_menu_items_parent_link_active"><span class="menuchildicon" ></span>Home</a>
-      <hr class ="horiz_separator"/>
+        
+        <hr class ="horiz_separator"/>
+
       </li>
-      <li class="ttr_menu_items_parent dropdown"><a href="requirements.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Requirements</a>
+      
+      <li class="ttr_menu_items_parent dropdown"><a href="requirements.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Reqs.</a>
          <hr class ="horiz_separator"/>
       </li>
-      <li class="ttr_menu_items_parent dropdown"><a href="HCI.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>HCI</a>
+      <li class="ttr_menu_items_parent dropdown"><a href="UI.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>HCI</a>
          <hr class ="horiz_separator"/>
       </li>
       <li class="ttr_menu_items_parent dropdown"><a href="research.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Research</a>
@@ -80,13 +119,13 @@ PRIDAR Chatbot | A chatbot to help software engineers meet the requirements of t
       <li class="ttr_menu_items_parent dropdown"><a href="design.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Design</a>
          <hr class ="horiz_separator"/>
       </li>
-      <li class="ttr_menu_items_parent dropdown"><a href="implementation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Implementation</a>
+      <li class="ttr_menu_items_parent dropdown"><a href="implementation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Impl.</a>
          <hr class ="horiz_separator"/>
       </li>
       <li class="ttr_menu_items_parent dropdown"><a href="testing.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Testing</a>
         <hr class ="horiz_separator"/>
      </li>
-      <li class="ttr_menu_items_parent dropdown"><a href="evaluation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Evaluation</a>
+      <li class="ttr_menu_items_parent dropdown"><a href="evaluation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Eval.</a>
       <hr class ="horiz_separator"/>
       </li>
       <!-- <li class="ttr_menu_items_parent dropdown"><a href="services.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Services</a>
@@ -1009,9 +1048,28 @@ Designed With TemplateToaster
     width: 20px;
     height: auto;
   }
+  .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 <footer id="ttr_footer">
-  <div class="margin_collapsetop"></div>
    <div id="ttr_footer_inner">
   <div class="ttr_footer-widget-cell_inner_widget_container">
   <div class="ttr_footer-widget-cell_inner0 container row">
@@ -1027,18 +1085,7 @@ Designed With TemplateToaster
   </div>
   <div class=" visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div>
 
-  <div class=" visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div>
-  <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
-  <div class="footercellcolumn3">
-  <div class="margin_collapsetop"></div>
-  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Project Supporters</span></h4>
-    <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/footnhs.jpeg" width="100" /></a>
-    <a href="https://www.ucl.ac.uk/" target="_blank"><img class="ttr_uniform" src="images/ucl.jpg" width="130" /></a>
-<p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">A lot of thanks to our company partner </span></p><p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">NHS and Dr. Joseph Connor especially.</span></p>
-  </div>
-  <div class="margin_collapsetop"></div>
-  </div>
-  </div>
+
   <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
     <div class="footercellcolumn2">
     <div class="margin_collapsetop"></div>
@@ -1066,19 +1113,37 @@ Designed With TemplateToaster
     <div class="footercellcolumn4">
       <div class="margin_collapsetop"></div>
       <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">        Quick Links</span></h4>
+        <div class="row">
+          <div class="column">
         <p><img class="footerIcons" src="images/home.png"><a href="home.html"> Home</a></p>
-        <p><img class="footerIcons" src="images/req.png"><a href="home.html"> Requirements</a></p>
-        <p><img class="footerIcons" src="images/hci.png"><a href="HCI.html"> HCI</a></p>
+        <p><img class="footerIcons" src="images/req.png"><a href="requirements.html"> Requirements</a></p>
+        <p><img class="footerIcons" src="images/hci.png"><a href="UI.html"> HCI</a></p>
+        <p><img class="footerIcons" src="images/req.png"><a href="research.html">Research</a></p>
         <p><img class="footerIcons" src="images/design.png"><a href="design.html"> Design</a></p>
+        </div>
+        <div class="column">
         <p><img class="footerIcons" src="images/impl.png"><a href="implementation.html">Implementation</a></p>
-        <p><img class="footerIcons" src="images/about.png"><a href="about-us.html">About Us</a></p>
-        <p><img class="footerIcons" src="images/blog.png"><a href="blog.html">Blog</a></p>
-        
+        <p><img class="footerIcons" src="images/req.png"><a href="home.html"> Testing</a></p>
+        <p><img class="footerIcons" src="images/about.png"><a href="evaluation.html">Evaluation</a></p>
+        <p><img class="footerIcons" src="images/blog.png"><a href="appendix.html">Appendix</a></p>
+      </div>
+    </div>
         
         </div>
-      <div class="margin_collapsetop"></div>
     </div>
     </div>
+   <div class=" visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div>
+  <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
+  <div class="footercellcolumn3">
+  <div class="margin_collapsetop"></div>
+  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Project Supporters</span></h4>
+    <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/footnhs.jpeg" width="100" /></a>
+    <a href="https://www.ucl.ac.uk/" target="_blank"><img class="ttr_uniform" src="images/ucl.jpg" width="130" /></a>
+<p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">A lot of thanks to our company partner </span></p><p style="line-height:1.65em;"><span style="font-size:0.933em;color:rgba(203,203,203,1);">NHS and Dr. Joseph Connor especially.</span></p>
+  </div>
+  <div class="margin_collapsetop"></div>
+  </div>
+  </div>
   </div>
   <!-- <div class=" visible-lg-block d-xl-block d-lg-block visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear: both;width:0px;"></div> -->
   <!-- <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
@@ -1088,7 +1153,7 @@ Designed With TemplateToaster
         <ul>
           <li><img class="footerIcons" src="images/home.png"><a href="home.html"> Home</a></li>
           <li><img class="footerIcons" src="images/req.png"><a href="requirements.html"> Requirements</a></li>
-          <li><img class="footerIcons" src="images/hci.png"><a href="HCI.html"> HCI</a></li>
+          <li><img class="footerIcons" src="images/hci.png"><a href="UI.html"> HCI</a></li>
           <li><img class="footerIcons" src="images/design.png"><a href="design.html"> Design</a></li>
           <li><img class="footerIcons" src="images/impl.png"><a href="implementation.html">Implementation</a></li>
           <li><img class="footerIcons" src="images/about.png"><a href="about-us.html">About Us</a></li>
@@ -1100,8 +1165,9 @@ Designed With TemplateToaster
     </div> -->
   
   <!-- <div class=" visible-lg-block d-xl-block d-lg-block visible-md-block d-md-block visible-sm-block d-sm-block visible-xs-block d-block" style="clear:both;width:0px;"></div> -->
-  </div>
-  </div>
+  
+</div>
+
   <div class="ttr_footer_bottom_footer">
   <div class="ttr_footer_bottom_footer_inner">
   <div class="ttr_footer_element_alignment container">
