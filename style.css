@@ -13595,7 +13595,7 @@ img {
 }
 
 .ag-timeline-block {
-  padding: 300px 0;
+  padding: 50px 0;
 }
 .ag-timeline_title-box {
   padding: 0 0 30px;
@@ -13617,7 +13617,7 @@ img {
   text-fill-color: transparent;
   color: transparent;
 
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .ag-timeline_item {
