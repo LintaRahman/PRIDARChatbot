@@ -6279,7 +6279,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6338,8 +6338,8 @@ text-align:left;
 text-decoration:none;
 text-transform:none;
 font-family:"Arial";
-background-color:#FFFFFF;
-background:rgba(255,255,255,1);
+background-color:#159C92;
+background:rgb(1, 194, 152);
 background-clip:padding-box;border-radius:0px 0px 0px 0px;
 border:solid #C8CCCC;
 border:solid rgba(200,204,204,1);
@@ -6461,7 +6461,7 @@ background-image: url("images/grad.jpeg");
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6480,7 +6480,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6626,7 +6626,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6649,7 +6649,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6976,7 +6976,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -6988,7 +6988,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7054,7 +7054,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7223,7 +7223,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7246,7 +7246,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7271,7 +7271,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7291,7 +7291,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7311,7 +7311,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7346,7 +7346,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7380,7 +7380,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7413,7 +7413,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7439,7 +7439,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7458,7 +7458,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -7654,7 +7654,7 @@ font-size:12px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9474,14 +9474,14 @@ border-color:transparent;
 {
 background-color:#E1E1E1;
 background:rgba(225,225,225,1);
-background-clip:padding-box;color:#333333;
+background-clip:padding-box;color:#10c2b9;
 border-color:transparent;
 }
  .btn-success:hover 
 {
 background-color:#EEEEEE;
 background:rgba(238,238,238,1);
-background-clip:padding-box;color:#333333;
+background-clip:padding-box;color:#10c2b9;
 border-color:transparent;
 }
  .btn-info:hover 
@@ -9495,14 +9495,14 @@ border-color:transparent;
 {
 background-color:#EEEEEE;
 background:rgba(238,238,238,1);
-background-clip:padding-box;color:#333333;
+background-clip:padding-box;color:#10c2b9;
 border-color:transparent;
 }
  .btn-danger:hover 
 {
 background-color:#EEEEEE;
 background:rgba(238,238,238,1);
-background-clip:padding-box;color:#333333;
+background-clip:padding-box;color:#10c2b9;
 border-color:transparent;
 }
  .btn-lg, .btn-group-lg > .btn, .btn-lg:hover, .btn-group-lg > .btn:hover 
@@ -9574,7 +9574,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:center;
 text-decoration:none;
@@ -9588,7 +9588,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:center;
 text-decoration:none;
@@ -9764,7 +9764,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9788,7 +9788,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9825,7 +9825,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9846,7 +9846,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9868,7 +9868,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -9949,7 +9949,7 @@ background-clip:padding-box;font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -10158,7 +10158,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -10166,7 +10166,7 @@ text-transform:none;
 }
 .nav.ttr_vmenu_items li:hover a.ttr_vmenu_items_parent_link,ttr_ .nav.ttr_vmenu_items li:hover a.ttr_vmenu_items_parent_link_active 
 {
-background-color:#FFFFFF;
+background-color:#159C92;
 background:rgba(255,255,255,1);
 background-clip:padding-box;display:block;
 text-align:left;
@@ -10180,7 +10180,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#333333;
+color:#10c2b9;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -13194,7 +13194,7 @@ p, #ttr_html_content_margin p, .ttr_article .html_content p,  .ttr_block .html_c
 font-size:1em;
 font-family:"Roboto","Arial";font-weight:400;
 font-style:normal;
-margin-top:5px; margin-bottom:5px;color:#333333;
+margin-top:5px; margin-bottom:5px;color:#10c2b9;
 text-shadow:none;text-align:left;
 text-decoration:none;line-height:1.7;
 }
@@ -13958,7 +13958,7 @@ img {
 .tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
   border: 0;
   background: none !important;
-  color: #333333;
+  color: #10c2b9;
 }
 .tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
   color: #a6a6a6;
@@ -13974,7 +13974,7 @@ img {
 }
 .tabbable-line > .nav-tabs > li.active > a {
   border: 0;
-  color: #333333;
+  color: #10c2b9;
 }
 .tabbable-line > .nav-tabs > li.active > a > i {
   color: #404040;
@@ -14028,3 +14028,28 @@ img {
 }
 
 tab1 { padding-left: 4em; }
+
+.footerIcons{
+  width: 20px;
+  height: auto;
+}
+.column {
+float: left;
+width: 50%;
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+}
+}

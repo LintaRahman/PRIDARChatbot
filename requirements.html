@@ -142,16 +142,8 @@ $(window).load(function() {
    <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Project Background</span></p>
       <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
          <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-         <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">We met our clients to clarify the project requirements and have a better understanding of the user's needs and concerns. After conducting our interviews, we were able to identify our clientrequirements for our chatbot.</span>   
+         <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">The knowledge gap between the healthcare and technology industry has caused the gradual development of technology in the healthcare sector. It has been estimated that it takes around five years to develop software for the NHS. This is due to the continuous reviewing and communication required when developing a software as it needs to be checked by the NHS. Therefore, our PRIDAR Chatbot will help aid the development of softwares by allowing engineers to check that they have met the criteria for the NHS. </span>   
       
-      </p></div>
-   
-   <div class = "html_content"><p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
-      <ul>
-         <li><tab1><span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);"> Evaluate user systems against the PRIDAR methodology​</span></li></tab1>
-         <li><tab1><span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);"> Provide awareness and explain the PRIDAR requirements​</span></li></tab1>
-         <li><tab1><span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);"> Answer unprepared questions through a QA-like system</span> </li></tab1>
-      </ul>
       </p></div>
    <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
    <div style="clear:both;"></div>
@@ -204,9 +196,7 @@ $(window).load(function() {
          <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Project Goal</span></p>
             <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
                <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Our project is to develop a chatbot, i.e., AvaBot, that can run on web browser and other applications such as MS Teams.
-                  AvaBot will be connected to a knowledge base, which allows it to answer general and company-specific questions from employees.
-                  Documents can be received and processed according to the users' needs. AvaBot can summarize a document to illustrate what the document is about; to support natural language queries over documents backed up by a QA system; and to perform image recognition tasks for commonly used image types.</span>   
+               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Th</span>   
             
             </p></div>
          <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -407,48 +397,47 @@ $(window).load(function() {
       
       </p>   
    
-      <div class="tab">
-         <button class="tablinks" onclick="openCity(event, 'p1')">Persona 1</button>
-         <button class="tablinks" onclick="openCity(event, 'p2')">Persona 2</button>
-       </div>
-       
-       <!-- Tab content -->
-       <div id="p1" class="tabcontent">
-         <h3 class="gradtitle">Adele Luna - NHS Radiologist</h3>
-         <img src="images/Persona1.PNG" style="max-width:100000000px;max-height:10000000px;" />
-       </div>
-       
-       <div id="p2" class="tabcontent">
-         <h3 class="gradtitle">Mithila Sharmin - Medical Student</h3>
-         <img src="images/Persona2.PNG" style="max-width:100000000px;max-height:1000000px;" />
-       </div>
-       
-       <script>
-          function openCity(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-               tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-               tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-            }
-       </script>
+      
    </div>
    </div>
    </div>
 </div>
+
+<div id="ttr_page" class="container">
+   <div class="row">
+     <div class="col-md-12">
+
+        <div class="tabbable-panel">
+           <div class="tabbable-line">
+              <ul class="nav nav-tabs ">
+                 <li class="active">
+                    <a href="#tab_default_10" data-toggle="tab">Persona 1</a>
+                 </li>
+                 <li>
+                    <a href="#tab_default_20" data-toggle="tab">Persona 2</a>
+                 </li>
+              </ul>
+              <div class="tab-content">
+                 <div class="tab-pane active" id="tab_default_10">
+                    <h3 class="text" style="text-align: center;">
+                     Adele Luna - NHS Radiologist
+                    </h3>
+                    <img src="images/Persona1.PNG" style="max-width:100000000px;max-height:10000000px;" />
+                 </div>
+                 <div class="tab-pane" id="tab_default_20">
+                    <p class="text" style="text-align: center;">Mithila Sharmin - Medical Student
+                    </p>
+                    <img src="images/Persona2.PNG" style="align-self: center;max-width:100000000px;max-height:1000000px;" />
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        
+     </div>
+  </div>
+</div>
+
 </div>
 </div>
    </div>
@@ -466,7 +455,24 @@ $(window).load(function() {
       </div>
       </div>
       
-      
+      <div id="ttr_page" class="container">
+         <div id="ttr_content_and_sidebar_container">
+         <div id="ttr_content">
+         <div id="ttr_content_margin"class="container-fluid">
+         <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+         <div class="ttr_Services_html_row0 row">
+         <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <div class="ttr_Services_html_column00">
+         <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+         <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Use Cases</span></p>
+            <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+               <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">After creating the personas and understanding who are the users and what do the users need, we created the use case diagram to illustrate how users would interact with the bot and to fulfill their needs.</span>   
+            
+            </p></div>
+         </div>
+         </div>
+         </div>   
 
       <div id="ttr_content_and_sidebar_container">
          <div id="ttr_content">
@@ -479,11 +485,11 @@ $(window).load(function() {
          <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">MoSCoW List</span></p>
             <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
                <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">We decided to draw up personas based on information we got from people we interviewed. This would help us to visualize and keep in mind our potential types of users as we started developing our project.</span>   
+               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Having considered the requirements and needs of our clients, we drew up a MoSCoW list to have a clear outlook of our key action points and the features that our chatbot should possess.</span>   
             
             </p>   
          
-            <div class="tab" style="text-align:center">
+            <!-- <div class="tab" style="text-align:center">
                <button class="tablinks" onclick="openCity(event, 'mh')">Must Have</button>
              </div>
              
@@ -496,7 +502,7 @@ $(window).load(function() {
                <button class="tablinks" onclick="openCity(event, 'sh')">Should Have</button>
              </div>
              
-             <!-- Tab content -->
+             
              <div id="sh" class="tabcontent">
                <h3 class="gradtitle">Adele Luna - NHS Radiologist</h3>
                <img src="images/Persona1.PNG" style="max-width:100000000px;max-height:10000000px;" />
@@ -506,7 +512,7 @@ $(window).load(function() {
                <button class="tablinks" onclick="openCity(event, 'sh')">Could Have</button>
              </div>
              
-             <!-- Tab content -->
+            
              <div id="ch" class="tabcontent">
                <h3 class="gradtitle">Adele Luna - NHS Radiologist</h3>
                <img src="images/Persona1.PNG" style="max-width:100000000px;max-height:10000000px;" />
@@ -516,11 +522,11 @@ $(window).load(function() {
                <button class="tablinks" onclick="openCity(event, 'wh')">Won't Have</button>
              </div>
              
-             <!-- Tab content -->
+            
              <div id="wh" class="tabcontent">
                <h3 class="gradtitle">Adele Luna - NHS Radiologist</h3>
                <img src="images/Persona1.PNG" style="max-width:100000000px;max-height:10000000px;" />
-             </div>
+             </div> -->
       
 
 
@@ -589,6 +595,106 @@ $(window).load(function() {
    </div>
    </div>
 </div>
+
+<div id="ttr_page" class="container">
+   <div class="row">
+     <div class="col-md-12">
+
+        <div class="tabbable-panel">
+           <div class="tabbable-line">
+              <ul class="nav nav-tabs ">
+               <li class="active">
+                  <a href="#tab_default_3" data-toggle="tab">Must Have</a>
+               </li>
+               <li>
+                  <a href="#tab_default_4" data-toggle="tab">Should Have</a>
+               </li>
+               <li>
+                <a href="#tab_default_5" data-toggle="tab">Could Have</a>
+             </li>
+             <li>
+                <a href="#tab_default_6" data-toggle="tab">Won't Have</a>
+             </li>
+              </ul>
+              <div class="tab-content">
+                 <div class="tab-pane active" id="tab_default_3">
+                    <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+                     <span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(78,78,78,1);">
+                        <br/><strong>Must Have</strong> 
+                     <ul>
+                        <li></li>
+                     </ul>   
+                     </span> </p>
+                 </div>
+                 <div class="tab-pane" id="tab_default_4">
+                    <p class="text" style="text-align: center;">Should Have
+                    </p>
+                    <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+                     <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+                     <span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(78,78,78,1);">
+                        <br/><strong>Are you familiar with interactive software such as chat bots or trouble-shooters? ​</strong>
+                        <br/>I have come across chat bots on various websites.  They are only capable of handling trivial enquiries.​
+                        <br/>
+                        <br/><strong>Where can AI help in the medical field?​</strong>
+                        <br/>An area that needs development in the medical field is finding GP records for patients arriving at hospitals, as it can be often difficult to find their records due to the gap in databases.​
+                        <br/>
+                        <br/><strong>What is your favourite way to learn about a new concept?​</strong>
+                        <br/>I like a mixture of both classes and projects; classes and group sessions allow me to learn from different people and projects allow me to learn with experience.​
+                        <br/>
+                        <br/><strong>Do you prefer to figure things out on your own, or to have more directed learning?​</strong>
+                        <br/>I prefer working in groups as it allows me to learn from different people and different perspectives.
+                     </span> </p>
+                 </div>
+                 <div class="tab-pane" id="tab_default_5">
+                  <p class="text" style="text-align: center;">Could Have
+                  </p>
+                  <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+                   <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+                   <span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(78,78,78,1);">
+                      <br/><strong>Are you familiar with interactive software such as chat bots or trouble-shooters? ​</strong>
+                      <br/>I have come across chat bots on various websites.  They are only capable of handling trivial enquiries.​
+                      <br/>
+                      <br/><strong>Where can AI help in the medical field?​</strong>
+                      <br/>An area that needs development in the medical field is finding GP records for patients arriving at hospitals, as it can be often difficult to find their records due to the gap in databases.​
+                      <br/>
+                      <br/><strong>What is your favourite way to learn about a new concept?​</strong>
+                      <br/>I like a mixture of both classes and projects; classes and group sessions allow me to learn from different people and projects allow me to learn with experience.​
+                      <br/>
+                      <br/><strong>Do you prefer to figure things out on your own, or to have more directed learning?​</strong>
+                      <br/>I prefer working in groups as it allows me to learn from different people and different perspectives.
+                   </span> </p>
+               </div>
+               <div class="tab-pane" id="tab_default_6">
+                  <p class="text" style="text-align: center;">Won't Have
+                  </p>
+                  <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+                   <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+                   <span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgba(78,78,78,1);">
+                      <br/><strong>Are you familiar with interactive software such as chat bots or trouble-shooters? ​</strong>
+                      <br/>I have come across chat bots on various websites.  They are only capable of handling trivial enquiries.​
+                      <br/>
+                      <br/><strong>Where can AI help in the medical field?​</strong>
+                      <br/>An area that needs development in the medical field is finding GP records for patients arriving at hospitals, as it can be often difficult to find their records due to the gap in databases.​
+                      <br/>
+                      <br/><strong>What is your favourite way to learn about a new concept?​</strong>
+                      <br/>I like a mixture of both classes and projects; classes and group sessions allow me to learn from different people and projects allow me to learn with experience.​
+                      <br/>
+                      <br/><strong>Do you prefer to figure things out on your own, or to have more directed learning?​</strong>
+                      <br/>I prefer working in groups as it allows me to learn from different people and different perspectives.
+                   </span> </p>
+               </div>
+              </div>
+           </div>
+        </div>
+
+        
+     </div>
+  </div>
+</div>
+
+
+
+
 <div class="ttr_Services_html_row1 row">
 <div class="post_column col-lg-4 col-md-6 col-sm-6 col-xs-12">
 <div class="ttr_Services_html_column10">
