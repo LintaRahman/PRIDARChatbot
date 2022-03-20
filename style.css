@@ -8529,7 +8529,7 @@ text-decoration:none;
 }
  .ttr_footer-widget-area_inner_above0 
 {
-border-radius:0px 0px 0px 0px;
+border-radius:10px 10px 10px 10px;
 border:solid transparent;
 border:solid rgba(255,255,255,0);
 border-width:0px 0px 0px 0px;
@@ -12430,6 +12430,8 @@ img {
 .text {
   font-size: 20px;
   padding-left: 20px;
+  border-width: 10px;
+  border-bottom: #006363;
 }
 
 /* Style the button used to pause/play the video */
@@ -13217,7 +13219,7 @@ box-shadow:none;word-wrap:break-word;
 }
  .footercellcolumn2
 {
-padding:10px 10px 10px 10px;
+padding:10px 10px 0px 0px;
 border-radius:0 0 0 0;
 border:solid transparent;
 border-width: 0 0 0 0;
@@ -13233,7 +13235,7 @@ box-shadow:none;word-wrap:break-word;
 }
  .footercellcolumn4
 {
-padding:10px 10px 10px 10px;
+padding:10px 0px 0px 0px;
 border-radius:0 0 0 0;
 border:solid transparent;
 border-width: 0 0 0 0;
@@ -13511,7 +13513,7 @@ margin:0 0 0 0;
 }
  .ttr_footer-widget-cell_inner0
 {
-padding:20px 40px 40px 40px;
+padding:20px 10px 10px 10px;
 }
 #ttr_footer .container 
 {
@@ -13540,7 +13542,7 @@ margin:0 0 0 0;
 }
  .ttr_footer-widget-cell_inner0
 {
-padding:20px 60px 20px 20px;
+padding:20px 10px 10px 20px;
 }
 #ttr_footer_designed_by_links #ttr_footer_designed_by 
 {
@@ -13588,14 +13590,14 @@ img {
 }
 
 .ag-format-container {
-  width: 1160px;
+  width: 1060px;
   margin: 0 auto;
 
   position: relative;
 }
 
 .ag-timeline-block {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .ag-timeline_title-box {
   padding: 0 0 30px;
@@ -14036,8 +14038,7 @@ tab1 { padding-left: 4em; }
 .column {
 float: left;
 width: 50%;
-padding: 10px;
-height: 300px; /* Should be removed. Only for demonstration */
+padding: 5px;
 }
 
 /* Clear floats after the columns */
@@ -14053,3 +14054,8 @@ clear: both;
   width: 100%;
 }
 }
+
+
+
+
+
