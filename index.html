@@ -72,68 +72,163 @@ $(window).load(function() {
 </span>
 </button>
 </div>
-<!-- <style>
-  .dropdown-content {
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
   position: absolute;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  transition:
+  0.2s border-top-width ease-in,
+    0.3s border-top-color;
 }
-.dropdown-content a {
-  display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
-}
-</style>
-<div class="dropdown-content">
-  <a href="https://blog.hubspot.com/">Blog</a>
-  <a href="https://academy.hubspot.com/">Academy</a>
-  <a href="https://www.youtube.com/user/hubspot">YouTube</a>
-  </div> -->
+  </style>
+
 <div class="menu-center collapse navbar-collapse">
    <ul class="ttr_menu_items nav navbar-nav navbar-right">
+     <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown active"><a href="index.html" class="ttr_menu_items_parent_link_active"><span class="menuchildicon" ></span>Home</a>
-        
         <hr class ="horiz_separator"/>
-
       </li>
-      
+    <div class="dropdown-content">
+      <a href="#abstract">Abstract</a>
+      <a href="#video">Project Video</a>
+      <a href="#timeline">Project Timeline</a>
+      <a href="#team">Team Members</a>  
+    </div>
+    </div>
+    <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="requirements.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Reqs.</a>
          <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Project Background</a>
+        <a href="#abstract">Client Requirements</a>
+        <a href="#abstract">Project Goal</a>
+        <a href="#abstract">User Interviews</a>  
+        <a href="#abstract">User Personas</a>
+        <a href="#abstract">Use Cases</a>
+        <a href="#abstract">MoSCoW List</a>  
+    </div>
+    </div>
+  <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="UI.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>HCI</a>
          <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Design Principles</a>
+        <a href="#abstract">Sketches</a>
+        <a href="#abstract">Prototypes</a>  
+    </div>
+    </div>
+    <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="research.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Research</a>
         <hr class ="horiz_separator"/>
      </li>
+     <div class="dropdown-content">
+      <a href="#abstract">Abstract</a>
+      <a href="#abstract">Project Video</a>
+      <a href="#abstract">Project Timeline</a>
+      <a href="#abstract">Team Members</a>  
+  </div>
+    </div>
+     <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="design.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Design</a>
          <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Abstract</a>
+        <a href="#abstract">Project Video</a>
+        <a href="#abstract">Project Timeline</a>
+        <a href="#abstract">Team Members</a>  
+    </div>
+    </div>
+      <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="implementation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Impl.</a>
          <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Abstract</a>
+        <a href="#abstract">Project Video</a>
+        <a href="#abstract">Project Timeline</a>
+        <a href="#abstract">Team Members</a>  
+    </div>
+    </div>
+      <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="testing.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Testing</a>
         <hr class ="horiz_separator"/>
      </li>
+     <div class="dropdown-content">
+      <a href="#abstract">Abstract</a>
+      <a href="#abstract">Project Video</a>
+      <a href="#abstract">Project Timeline</a>
+      <a href="#abstract">Team Members</a>  
+  </div>
+    </div>
+     <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="evaluation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Eval.</a>
       <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Abstract</a>
+        <a href="#abstract">Project Video</a>
+        <a href="#abstract">Project Timeline</a>
+        <a href="#abstract">Team Members</a>  
+    </div>
+    </div>
       <!-- <li class="ttr_menu_items_parent dropdown"><a href="services.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Services</a>
       <hr class ="horiz_separator"/>
       </li> -->
+      <div class="dropdown">
       <li class="ttr_menu_items_parent dropdown"><a href="appendix.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Appendix</a>
       <hr class ="horiz_separator"/>
       </li>
+      <div class="dropdown-content">
+        <a href="#abstract">Abstract</a>
+        <a href="#abstract">Project Video</a>
+        <a href="#abstract">Project Timeline</a>
+        <a href="#abstract">Team Members</a>  
+    </div>
+    </div>
       <!-- <li class="ttr_menu_items_parent dropdown"><a href="contact.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Contact</a>
       <hr class ="horiz_separator"/>
       </li> -->
@@ -198,13 +293,11 @@ word-wrap:break-word;
 <div id="ttr_content">
 <div id="ttr_content_margin"class="container-fluid">
 <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="ttr_Home_html_row0 row">
+<div id="abstract" class="ttr_Home_html_row0 row">
 <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="ttr_Home_html_column00">
 <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<!-- <div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(78,78,78,1);">We create </span><span style="font-family:'Ubuntu','Arial';font-weight:700;font-size:2.5em;color:rgba(0,203,203,1);">Agency</span><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(0,203,203,1);"> </span><span style="font-family:'Ubuntu','Arial';font-size:2.5em;color:rgba(78,78,78,1);">for your solutions</span></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><br style="font-family:'Open Sans','Arial';font-size:1.714em;" /></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">We created our PRIDAR chatbot to help answer question about the application and deployment </span></p><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;"><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">of AI software in the NHS.</span></p></div> -->
-
-<div class="html_content"><p class="gradtitle" style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">- Abstract -</span></p>
+<div  class="html_content"><p class="gradtitle" style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">- Abstract -</span></p>
   <p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;">
     <br><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);">During the past decades, technology has improved the healthcare system in numerous ways. However, despite the revolutionary changes brought by technology, there is still gradual progression when it comes to developing softwares for healthcare companies, such as the NHS. This is caused as a result of the gap in the communication of engineers with workers from the NHS. That is why we created our PRIDAR Chatbot to bridge the gap between software engineers and the NHS. We designed our chatbot to help answer question about the application and deployment of AI software in the NHS. </span></p></div>
 <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -220,20 +313,9 @@ word-wrap:break-word;
   <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="ttr_About-Us_html_column30">
   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-  <div class="html_content"><p class="text" style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2.5em;color:rgba(0,203,203,1);">- What is PRIDAR? -</span></p></div>
-  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-  <div style="clear:both;"></div>
-  </div>
-  </div>
-  <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-  </div>
-  </div>
+  <div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-weight:70;font-size:2em;color:rgba(0,203,203,1);">- What is PRIDAR? -</span></p></div>
 
-<div class="ttr_Home_html_row14 row">
-<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="ttr_Home_html_column140">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;">
+<div class="html_content"><p style="margin:0.36em 0.36em 0.36em 0em;text-align:Center;line-height:2.11267605633803;padding-bottom:50px">
   <br><span style="font-family:'Open Sans','Arial';font-size:1.286em;color:rgba(78,78,78,1);"> The PRIDAR standard is a set of extra criteria software must meet before being approved for deployment in the NHS. Spanning across several topics, from IP agreements to safety officers, it is always unmet in some areas by software solutions fresh out of development. This leads to significant delays (3+ years) in the deployment of already finished software solutions. </span></p></div>
 
 <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -243,10 +325,11 @@ word-wrap:break-word;
 <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
 </div>
 </div>
+</div>
 
 
 
-<div class="ttr_About-Us_html_row3 row">
+<div id="video" class="ttr_About-Us_html_row3 row">
   <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="ttr_About-Us_html_column30">
   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -281,7 +364,7 @@ Your browser does not support the video tag.
 
 
 
-<div class="ttr_About-Us_html_row3 row">
+<div id="timeline" class="ttr_About-Us_html_row3 row">
   <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="ttr_About-Us_html_column30">
   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -324,7 +407,7 @@ Your browser does not support the video tag.
   <div style="height:0px;width:0px;overflow:hidden;"></div>
 
 
-<div class="ttr_About-Us_html_row3 row">
+<div id="team" class="ttr_About-Us_html_row3 row">
   <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="ttr_About-Us_html_column30">
   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
@@ -660,11 +743,11 @@ button:hover {
         </div>
       </div>
       <ul class="social">
-        <li><button class="socialsbutton"><a href="mailto:linta.rahman.20@ucl.ac.uk" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="mailto:linta.rahman.20@ucl.ac.uk" target="_blank" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
+        <li><button class="socialsbutton"><a href="https://instagram.com/lints_art?utm_medium=copy_link" target="_blank" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
         <!-- <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li> -->
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
-        <li><button class="socialsbutton"><a href="https://github.com/LintaRahman" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://linkedin.com/in/linta-rahman" target="_blank" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://github.com/LintaRahman" target="_blank"class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
       </ul>
       
       </div>
@@ -690,15 +773,16 @@ button:hover {
           <h1 style="text-align:Center;">Fraser Thomson</h1>
           <h3 style="text-align:Center;">Team Member</h3>
           <p class="bio" style="text-align:Center;">A second year student at UCL.
-            <br> Bot developer, website developer and programmer.</p>
+            <br> Bot developer and 
+            <br>programmer.</p>
         </div>
       </div>
       <ul class="social">
-        <li><button class="socialsbutton"><a href="mailto:zcablra@ucl.ac.uk" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li>
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
-        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="mailto:zcablra@ucl.ac.uk" target="_blank" class="fa fa-linkedin" aria-hidden="true"><img src="images/mail.gif" width= 25px ></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" target="_blank" class="fa fa-facebook" aria-hidden="true"><img src="images/ig.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" target="_blank" class="fa fa-twitter" aria-hidden="true"><img src="images/fb.png" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" target="_blank" class="fa fa-google-plus" aria-hidden="true"><img src="images/li.gif" width= 25px></a></button></li>
+        <li><button class="socialsbutton"><a href="https://codepen.io/collection/XdWJOQ/" target="_blank" class="fa fa-linkedin" aria-hidden="true"><img src="images/gh.gif" width= 25px></a></button></li>
       </ul>
       
       </div>
