@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-   <style>/* Style the tab */
-      </style>
 <head>
 <meta charset="utf-8">
 <script type="text/javascript" src="jquery.js">
@@ -13,6 +11,8 @@
 <script type="text/javascript" src="Customjs.js">
 </script>
 <script type="text/javascript" src="contactform.js">
+</script>
+<script type="text/javascript" src="vertabs.js">
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
@@ -124,6 +124,12 @@ tr {
   text-align: center;
   font-size: 1.2em;
 }
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+/* table {
+   border-style: outset; 
+} */
 </style>
 
 
@@ -149,7 +155,7 @@ tr {
    <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
    <div class="html_content"><p class="text" style="padding-bottom:20px; margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">MoSCoW List Achievement</span></p>
       </div>
-<table style="width:100%;border: 2px solid rgb(241, 238, 238);border-style: outset; background-color: #fff;">
+<table style="width:100%;border: 2px solid rgb(241, 238, 238);background-color: #fff;">
    <tr class="text" style="text-align: center;">
       <td>ID</td> 
       <td>Description</td>
@@ -308,9 +314,9 @@ tr {
    <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
    <div  class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Critical Evaluation</span></p>
       
-      <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
+      <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
          <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-         <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">We decided to draw up personas based on information we got from people we interviewed. This would help us to visualize and keep in mind our potential types of users as we started developing our project.</span>   
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">We decided to draw up personas based on information we got from people we interviewed. This would help us to visualize and keep in mind our potential types of users as we started developing our project.</span>   
       </p> 
    </div>
    </div>
@@ -322,36 +328,168 @@ tr {
 </div>
 
 
+<style>
+   * {box-sizing: border-box}
+
+.tab {
+  float: left;
+  border-right: 5px solid teal;
+  background-color: #ffffff;
+  width: 25%;
+  height: auto;
+}
+
+.tab button {
+  display: block;
+  /* background-color: inherit; */
+  border-bottom: teal;
+  color: teal;
+  padding: 22px 16px;
+  font-size: 1.3em;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+  /* text-transform: uppercase; */
+}
+
+.tab button.active {
+  background-color: teal;
+  color: white; 
+  /* text-transform: uppercase; */
+  
+}
+
+/* Style the tab content */
+.tabcontent{
+  float: left;
+  padding: 0px 12px;
+  background: linear-gradient(to top right,#f5f5f5 50%, transparent 50%);
+  border-left: 5px solid teal;
+  width: 75%;
+  border-left: none;
+  /* height: auto; */
+  min-height: 540px;
+}
+
+</style>
+<div class="tab">
+   <button class="tablinks" onclick="openCity(event, 'UserExperience')">User Experience</button>
+   <button class="tablinks" onclick="openCity(event, 'functionality')">Functionality</button>
+   <button class="tablinks" onclick="openCity(event, 'stability')">Stability & Efficiency</button>
+   <button class="tablinks" onclick="openCity(event, 'availability')">Availability</button>
+   <button class="tablinks" onclick="openCity(event, 'maintainability')">Maintainability</button>
+   <button class="tablinks" onclick="openCity(event, 'bugs')">Bugs</button>
+   <button class="tablinks" onclick="openCity(event, 'projectmanage')">Project Management</button>
+ </div>
+ 
+ <div id="UserExperience" class="tabcontent active"  style="display: block;">
+   <h2 class="text">User Experience</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">
+      With learnings from our HCI component, we tried our best to deliver a usable chatbot experience that gave the user options, set up their expectations, and directed them well.
+We achieved this by giving the user choices where possible, such as when to display resources after completing a test, or without taking the test at all.
+The PRIDAR chatbot also re-prompts users in the case that their input is unexpected, and never leads them to a dead-end response, as can be seen in the login/signup segment of the bot.
+Additionally, the feature of only asking users topics they have answers for gives them power in choosing how much time to spend on the test and allowing them to skip topics that aren’t helpful to them.
+</span></p><p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">
+With that being said, our project still has a ways to go in terms of HCI, as we often implemented these “quality of life” additions after a features base functionality was complete.
+For instance, the PRIDAR chatbot still only accepts a limited input from the user, not accepting synonyms of words such as “yes”.
+Also, feedback on the test feature indicates that it can feel repetitive typing the exact, case sensitive answer to potentially over 100 questions.
+
+   </span></p>  
+ </div>
+ 
+ <div id="functionality" class="tabcontent">
+   <h2 class="text">Functionality</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">We have worked hard to implement all the key and additional requirements:
+   <ul style="font-family:'Open Sans','Arial';font-size:1.2em;color:rgba(78,78,78,1);list-style-image: url('images/cog.png'); padding-left:40px">
+      <li>Test user knowledge on the PRIDAR standard</li>
+      <li>Illustrate how prepared user’s projects are for NHS deployment</li>
+      <li>Help users understand the PRIDAR requirements</li>
+      <li>EU GDPR compliance</li>
+      <li>Allow for easy management by clinical professionals</li>
+      <li>Lightweight and easily distributable software</li>
+      <li>Provide visualisations of data</li>
+      <li>Establish a national average for scores</li>
+   </ul></span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">While we are proud of this accomplishment, some features could be improved upon and deepened further with more time.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">For instance, the test mode could be adjusted to allow users to test for a single topic or custom range of topics. Similarly, the view resources feature could allow the same kind of customization instead of listing all the resources.</span></p>
+ </div>
+ 
+ <div id="stability" class="tabcontent">
+   <h2 class="text">Stability & Efficiency</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">The PRIDAR chatbot functions consistently well, much in part thanks to Voiceflow hosting the project, and the chosen backend integrations being reliable and giving fast API responses. The same is true of the bot’s Telegram deployment, which we are very proud of.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Those strengths however could rarely turn into weaknesses, for instance if one of our service providers is down for maintenance, features cannot work, and if this happens to be Voiceflow then the bot will be completely down. That being said, this is a rare occurrence and can be kept track of easily through the appropriate provider’s website.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Also, the internal algorithms used to sort content and search users are linear. While this works just fine for now, in the case of the bot becoming congested with content and users, this could slow it down and even time requests to the bot. The reason for these linear algorithms is a lack of time and difficulty implementing data structures in Voiceflow’s coding environment, which lags with complicated code, provides no syntax highlighting, and is restricted to a very small view with no scroll bar, making it hard to use.</span></p>
+ </div>
+ <div id="availability" class="tabcontent">
+   <h2 class="text">Availability</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">We believe that the PRIDAR chatbot is extremely accessible to users, and was one of the key goals we kept in mind during development. This was achieved by using reliable services which are rarely ever down or not functioning as intended.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Our text-based approach and lightweight deployment played an arguably bigger part in this however, as users could interact with the bot regardless of their hardware, through either Telegram or Voiceflow’s web app, requiring just a url to visit.</span></p>
+ </div>
+ <div id="maintainability" class="tabcontent">
+   <h2 class="text">Maintainability</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">A huge consideration going into this project was how clinicians would both update the bot’s content, as well as potentially extend it’s functionality. This drove our decisions in technology, and we believe it paid off.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">The bot is entirely manageable through the databases spreadsheet interface, which is intuitive, and can be shared easily. This data can also be transported elsewhere, managed, and integrated with extra functionality (such as automatically emailing or running scripts on).</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">The Voiceflow project is very accessible due to it’s easily comprehensible block design, and the attention we paid to commenting on blocks and code thoroughly. In addition to this, we have created a step by step walkthrough of the components in the Voiceflow project, with highlighted examples and notes explaining the most intricate of details in order to help clinicians who aren’t familiar with the project or Voiceflow edit it down the line without issue.</span></p>
+ </div>
+
+ <div id="projectmanage" class="tabcontent">
+   <h2 class="text">Project Management</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Our team allocated roles efficiently, based on both availability and ability. We always worked using version history (both for the website and Voiceflow project) in a collaborative manner.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">As much as possible, we followed an AGILE approach to development, meeting our client Dr Connor every Thursday, before discussing feedback and creating a plan for the coming week together in a separate meeting. We would then have meetings at the start of the week to check our progress and evaluate our direction.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Our main mode of communication was through Whatsapp, which was extremely convenient and made us more accessible to one another. We conducted team meetings through Zoom at least once a week, and presented through MS Teams. We also used MS office to share documents and collaborate, particularly towards assessed deadlines.</span></p>
+ </div>
+ <div id="bugs" class="tabcontent">
+   <h2 class="text">Bugs</h2>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Thanks to our comprehensive testing approach, our bot has no bugs present.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">However, certain limitations could cause issues in the future, such as database GET requests only returning a certain number of records, databases only storing a finite number of records, or linear algorithms taking too long causing the bot to time out. Additionally, the bot currently does not scale very well with topics. This means that the resources table and averages table must be updated accordingly by hand when editing the number of topics in the bot.</span></p>
+   <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">Other issues with the chatbot, such as lack of ability to comprehend different inputs, are attributed to it’s limited scope rather than unintended bugs in behaviour.</span></p>
+ </div>
+
+
 <div id="ttr_page" class="container">
    <div id="ttr_content_and_sidebar_container">
    <div id="ttr_content">
-      <div id="ttr_content_margin"class="container-fluid">
-      <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-   <div id="futurework" class="ttr_Services_html_row0 row">
-      <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class="ttr_Services_html_column00">
-      <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-      <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Future Work</span></p>
-         <p style="margin:0em 0em 0.48em 0em;text-align:Center;font-size:1.143em;">
-            <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-            <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">We decided to draw up personas based on information we got from people we interviewed. This would help us to visualize and keep in mind our potential types of users as we started developing our project.</span>   
-         
-         </p> 
-      </div>
-      
-<div class="ttr_Services_html_row1 row">
-<div class="post_column col-lg-4 col-md-6 col-sm-6 col-xs-12">
-<div class="ttr_Services_html_column10">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<!-- <div class="html_content"><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="images/72.png" style="max-width:64px;max-height:64px;" /></span></span><br style="font-family:'Open Sans','Arial';font-weight:700;font-size:1.429em;color:rgba(78,78,78,1);" /></p><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span style="font-family:'Roboto','Arial';font-size:1.429em;color:rgba(78,78,78,1);">Service1</span></p><p style="margin:1.43em 0em 0em 0em;text-align:Center;line-height:1.76056338028169;"><span style="font-family:'Open Sans','Arial';color:rgba(78,78,78,1);">Lorem ipsum dolor sit amet, test link adipiscing elit.Nullam dignissim convallis est.Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.Nam sit amet sem.</span></p></div> -->
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
+   <div id="ttr_content_margin"class="container-fluid">
+   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+<div id="criteval" class="ttr_Services_html_row0 row">
+   <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div class="ttr_Services_html_column00">
+   <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+   <div  class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Future Work</span></p>
+      <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
+         <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">Due to the time constraints in this project, there are several changes, both substantial and minor which can be made to improve the bot:</span>   
+      </p> 
+      <ul class="designedlists" style="padding-left:50px">
+         <li>Accepting alternate and case insensitive inputs, or implementing intents based on user utterances</li>
+         <li>Allowing for customization of test topics and resource topics</li>
+         <li>Tracking score changes over time</li>
+         <li>Giving resources and option to take test on previously incorrect topics</li>
+         <li>Voice based input and deployment</li>
+         <li>Tweaking howe buttons are displayed in Telegram deployment</li>
+         <li>Limiting the number of questions asked per topic, choosing a random subset to ask</li>
+      </ul>
+      <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;padding-bottom:50px">
+         <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">The content of the bot can easily be modified and expanded through Jotform’s table interface. As for expanding upon the features of the bot, using the documentation provided, this should be possible without spending extra time figuring out how the system works. Switching to an NLP based chatbot experience would require a considerable rework of the bot, but would provide a much more natural and flexible experience.</span>   
+      </p> 
+   </div>
 
-
-
-<div style="height:0px;width:0px;overflow:hidden;"></div>
-</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
-   </div></div></div>
+   </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <footer id="ttr_footer">
    <div id="ttr_footer_inner">
   <div class="ttr_footer-widget-cell_inner_widget_container">

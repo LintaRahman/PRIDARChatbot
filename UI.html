@@ -12,6 +12,8 @@
 </script>
 <script type="text/javascript" src="contactform.js">
 </script>
+<script type="text/javascript" src="vertabs.js">
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
    PRIDAR | Human Computer Interaction
@@ -129,8 +131,6 @@ $(window).load(function() {
 </header>
 
 
-
-
 <style>
    * {
   box-sizing: border-box;
@@ -234,7 +234,6 @@ $(window).load(function() {
    <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
    <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Design Principles</span></p>
 </div>
-<!-- <hr class ="horiz_separator"> -->
    <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
    <div style="clear:both;"></div>
    </div>
@@ -245,45 +244,30 @@ $(window).load(function() {
       <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="ttr_About-Us_html_column60">
       <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-      <div class="html_content"><p class="text" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:2.01em;color:rgba(52,52,52,1);">User Centred Design</span></p></div>
-      <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;padding-bottom: 10px;">
-         <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-         <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Our aim was to ensure a smooth user experience when using our application. Using a User Centred Design, by getting feedback from potential users we were able to agree to which sketches were suitable for the 'chatbot interface'.
-          https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/</span></p>
+      <div class="html_content">
+      <p class="gradtext" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:1.7em;">User Centred Design</span></p>
+      <p class="contentstyle">
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">Our aim was to ensure a smooth user experience when using our application. Using a User Centred Design, by getting feedback from potential users we were able to agree to which sketches were suitable for the 'chatbot interface'.</span></p>
+      <p class="gradtext" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:1.7em;">Simplicity</span></p>
+      <p class="contentstyle">
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">Our aim was to develop a simple user interface to follow. An ideal user interface should be simple and elegant. </span></p>
 
-      <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-      <div style="clear:both;"></div>
-      </div>
-      </div>
-      <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-      </div>
-      </div>
+      <p class="gradtext" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:1.7em;">Consistency</span></p>
+      <p class="contentstyle">
+         <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">Consistency creates familiarity, and familiar interfaces are naturally more usable. A consistent design is predictable. Predictable design means it’s easy to understand how to use functions without instruction. Not only should UI design be consistent internally, but externally as well. </span></p>
+      <p class="gradtext" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:1.7em;">Dialogs should results closure</span></p>
+      <p class="contentstyle">
+        <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">Actions should have a beginning, middle, and end (with feedback at each step). At the end of a test, users should be able to submit and view test scores.</span></p>
 
-   <div class="ttr_About-Us_html_row6 row">
-      <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class="ttr_About-Us_html_column60">
-      <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-      <div class="html_content"><p class="text" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:2.01em;color:rgba(52,52,52,1);">Simplicity</span></p></div>
-      <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
-         <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-         <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Our aim was to develop a simple user interface to follow.</span></p>
-
-      <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-      <div style="clear:both;"></div>
+      <p class="gradtext" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:1.7em;">Reduce Cognitive Load</span></p>
+      <p class="contentstyle">
+           <span style="font-family:'Open Sans','Arial';font-size:1.4em;color:rgba(78,78,78,1);">User Interfaces serve to reduce cognititve load for users. We want user to be able to use our application without inducing cognititve load, without the need 'to think', when navigating through the programme. There are a few common ways to reduce cognitive load: 
+            <br>Remember the 3-click rule – it shouldn’t take more than three clicks to find any information
+            <br>Minimize recall in favor of recognition – common images and icons in context help users identify functionality
+            <br>Group actions and information – Most people can handle seven-plus-or-minus two chunks of information when processing it
+        </span></p>
+      <p style="font-family:'Open Sans','Arial';font-size:1.35em;color:rgba(78,78,78,1);">Reference:<a style="color:#007457;" href="https://www.uxpin.com/studio/blog/ui-design-principles/">The Basic Principles of User Interface Design</a></p>
       </div>
-      </div>
-      <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-      </div>
-      </div>
-
-         <div class="ttr_About-Us_html_row6 row">
-            <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="ttr_About-Us_html_column60">
-            <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-            <div class="html_content"><p class="text" style="text-align:left;"><span style="font-family:'Roboto','Segoe UI';font-size:2.1em;color:rgba(52,52,52,1);"></span></p></div>
-            <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
-               <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
-               <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Our aim was to develop a simple user interface to follow.</span></p>
       
             <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
             <div style="clear:both;"></div>
@@ -304,7 +288,7 @@ $(window).load(function() {
       <div class="ttr_Services_html_column00">
       <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
       <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Sketches</span></p>
-         <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
+         <p class="contentstyle">
             <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
             <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">This stage saw us brainstorming and refining ideas about UI. 
               We first roughly sketched any ideas which came to mind about different areas of the UI, traditional and futuristic designs, minimalistic and more detailed designs. 
@@ -418,7 +402,7 @@ $(window).load(function() {
          <div class="ttr_Services_html_column00">
          <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
          <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Prototype</span></p>
-            <p style="margin:0em 0em 0.48em 0em;text-align:left;font-size:1.143em;">
+            <p class="contentstyle">
                <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
                <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">After finalising the sketches, we began working on the prototype based on the user requirements and chosen sketches. With a clear direction based on user feedback and an iterative design process, we built up a prototype to explore how feasible our design was. This process allowed us to more thoroughly examine the usability of our design, and upon receiving feedback from users discovered that they would prefer.  </span>   
             
@@ -528,27 +512,7 @@ $(window).load(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+         </div>
          <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
          </div>
          </div>
@@ -561,14 +525,68 @@ $(window).load(function() {
    </div>
    </div>
 </div>
+<div id="ttr_page" class="container">
+  <div id="ttr_content_and_sidebar_container">
+  <div id="ttr_content">
+  <div id="ttr_content_margin"class="container-fluid">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div id="hcievaluation" class="ttr_Services_html_row0 row">
+  <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="ttr_Services_html_column00">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="html_content"><p class="text" style="margin:0em 0em 0em 0em;text-align:Center;line-height:0.0704225352112676;font-size:1.143em;"><span style="font-family:'Roboto','Arial';font-size:2.5em;color:rgb(0, 132, 150);">Evaluation</span></p>
+     <p class="contentstyle">
+        <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+        <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">After completing our prototype, we carried out heuristic evaluation aided by our user’s feedback on the system flow, design and usability.
+        </span></p></div>
+     
+<style>
+  .tabcontent {
+    min-height: 195px;
+  }
+</style>
 
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'conandstand')">Consistency & Standards</button>
+        <button class="tablinks" onclick="openCity(event, 'flex')">Flexibility & Efficiency of use</button>
+      </div>
 
+      <div id="conandstand" class="tabcontent" style="display:block">
+        <h2 class="text">Consistency & Standards</h2>
+        <!-- <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">We have worked hard to implement all the key and additional requirements: -->
+        <ul style="font-family:'Open Sans','Arial';font-size:1.2em;color:rgba(78,78,78,1);list-style-image: url('images/cog.png'); padding-left:40px">
+           <li>UI has inconsistent design, both in terms of density of information displayed, colour schemes and graphics</li>
+           <li>Lack of user verification</li>
+           <li>No view available for what the clinicians would see</li>
+           <li>Areas of the prototype made it unclear where a piece of text was also a link that could be clicked to visit another page</li>
+        </ul></span></p></div>
 
+      <div id="flex" class="tabcontent"  style="display:none">
+        <h2 class="text">Flexibility & Efficiency of use</h2>
+        <!-- <p class="contentstyle"><span  style="font-family:'Open Sans','Arial';font-size:0.9em;color:rgba(78,78,78,1);">We have worked hard to implement all the key and additional requirements: -->
+        <ul style="font-family:'Open Sans','Arial';font-size:1.2em;color:rgba(78,78,78,1);list-style-image: url('images/cog.png'); padding-left:40px">
+          <li>No sorting or search function when viewing user question list</li> 
+          <li>No way to retake test after completion without re-logging in</li>
+          <li>No way to ask a question without taking the test first</li>
 
-
-
-
-
+          </ul></span></p>
+ </div>
+ <div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="ttr_Services_html_column00">
+  <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+  <div class="html_content"><p class="contentstyle" style="padding-bottom:50px;">
+        <br style="font-family:'Roboto','Arial';font-size:2.143em;color:rgba(52,52,52,1);" />
+        <span style="font-family:'Open Sans','Arial';font-size:1.5em;color:rgba(78,78,78,1);">Overall, we believe this HCI component to be a success, as we have gained insight into our user requirements, and how they practically relate to our project.
+        </span></p></div>
+ <div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
+ <div style="clear:both;"></div>
+ </div>
+ <div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
+ </div>
+  </div>
+  </div>
+  </div></div></div></div></div></div>
+ 
 
 <footer id="ttr_footer">
    <div id="ttr_footer_inner">
