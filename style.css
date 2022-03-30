@@ -4515,13 +4515,13 @@ height:50px;
 }
 .About-Us .ttr_menu_items  li:hover a.ttr_menu_items_parent_link,.About-Us .nav.ttr_menu_items  li:hover span.separator
 {
-background-color:#E1E1E1;
-background:rgba(225,225,225,1);
+  background-color:#159C92;
+/* background:rgba(225,225,225,1); */
 background-clip:padding-box;}
 .About-Us .nav.ttr_menu_items  li:hover a.ttr_menu_items_parent_link_arrow
 {
-background-color:#E1E1E1;
-background:rgba(225,225,225,1);
+  background-color:#159C92;
+/* background:rgba(225,225,225,1); */
 background-clip:padding-box;}
 .About-Us .nav.ttr_menu_items  li a.ttr_menu_items_parent_link_active_arrow
 {
@@ -6341,8 +6341,8 @@ font-family:"Arial";
 background-color:#159C92;
 background:rgb(1, 194, 152);
 background-clip:padding-box;border-radius:0px 0px 0px 0px;
-border:solid #C8CCCC;
-border:solid rgba(200,204,204,1);
+/* border:solid #C8CCCC;
+border:solid rgba(200,204,204,1); */
 border-width:1px 1px 1px 1px;
 box-shadow:none;
 margin:0;
@@ -7054,7 +7054,7 @@ font-size:14px;
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
-color:#10c2b9;
+color:#ffffff;
 text-shadow:none;
 text-align:left;
 text-decoration:none;
@@ -12270,7 +12270,7 @@ box-shadow:none;
 }
  nav#ttr_menu .icon-bar
 {
-background-color:#00CBCB;
+  background-color:#159C92;
 background:rgba(0,203,203,1);
 background-clip:padding-box;height:2px;
 
@@ -12300,7 +12300,7 @@ margin:0;
  .ttr_menu_items  li a.ttr_menu_items_parent_link
 {
 display:block;
-background-color:#FFFFFF;
+background-color:#159C92;
 background:rgba(255,255,255,1);
 background-clip:padding-box;font-size:16px;
 font-family:"Roboto","FuturaLight","Segoe UI";font-weight:500;
@@ -12357,7 +12357,7 @@ text-transform:uppercase;
 cursor: pointer;
 display: block;
 line-height:42.5px;
-background-color:#00CBCB;
+background-color:#159C92;
 background:rgba(0,203,203,1);
 background-clip:padding-box;padding-top:0px;
 padding-bottom:0px;
@@ -13707,3 +13707,4 @@ a.vert:active{
   display: none;
   min-height: 540px;
 }
+
