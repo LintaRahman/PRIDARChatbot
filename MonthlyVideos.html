@@ -2,39 +2,23 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script type="text/javascript" src="jquery.js">
-</script>
-<script type="text/javascript" src="jquery-ui.min.js">
-</script>
-<script type="text/javascript" src="bootstrap.min.js">
-</script>
-<script type="text/javascript" src="Customjs.js">
-</script>
-<script type="text/javascript" src="contactform.js">
-</script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="Customjs.js"></script>
+<script type="text/javascript" src="contactform.js"></script>
+<script type="text/javascript" src="timeline.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-PRIDAR | Monthly Videos
+PRIDAR Chatbot | Monthly Videos
 </title>
+<link rel = "icon" href = "images/chat.png" type = "image/x-icon">
 <link rel="stylesheet"  href="bootstrap.css" type="text/css" media="screen"/>
 <link rel="stylesheet"  href="style.css" type="text/css" media="screen"/>
-<!--[if lte IE 8]>
-<link rel="stylesheet"  href="menuie.css" type="text/css" media="screen"/>
-<link rel="stylesheet"  href="vmenuie.css" type="text/css" media="screen"/>
-<![endif]-->
+
 <script type="text/javascript" src="totop.js">
 </script>
-<!--[if IE 7]>
-<style type="text/css" media="screen">
-#ttr_vmenu_items  li.ttr_vmenu_items_parent {margin-left:-16px;font-size:0px;}
-</style>
-<![endif]-->
-<!--[if lt IE 9]>
-<script type="text/javascript" src="html5shiv.js">
-</script>
-<script type="text/javascript" src="respond.min.js">
-</script>
-<![endif]-->
+
 </head>
 <body class="Services">
   <div class="se-pre-con"></div>
@@ -50,76 +34,131 @@ $(window).load(function() {
 <a href="#" class="back-to-top"><img alt="Back to Top" src="images/gototop0.png"/></a>
 </div>
 <nav id="ttr_menu" class="navbar-default navbar">
-   <div id="ttr_menu_inner_in">
-<div class="menuforeground">
-</div>
-<div class="ttr_menushape1">
-  <div class="html_content">
-    <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/download.png" style="max-width:237px;max-height:304px;" /></a></div>
+  <div id="ttr_menu_inner_in">
+    <div class="menuforeground">
   </div>
-<div id="navigationmenu">
-<div class="navbar-header">
-<button id="nav-expander" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-<span class="sr-only">
-</span>
-<span class="icon-bar">
-</span>
-<span class="icon-bar">
-</span>
-<span class="icon-bar">
-</span>
-</button>
-</div>
-<div class="menu-center collapse navbar-collapse">
-  <ul class="ttr_menu_items nav navbar-nav navbar-right">
-     <li class="ttr_menu_items_parent dropdown active"><a href="index.html" class="ttr_menu_items_parent_link_active"><span class="menuchildicon" ></span>Home</a>
-       
-       <hr class ="horiz_separator"/>
-
-     </li>
-     
-     <li class="ttr_menu_items_parent dropdown"><a href="requirements.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Reqs.</a>
-        <hr class ="horiz_separator"/>
-     </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="UI.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>HCI</a>
-        <hr class ="horiz_separator"/>
-     </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="research.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Research</a>
-       <hr class ="horiz_separator"/>
+  <div id="navigationmenu">
+  <div class="navbar-header">
+  <button id="nav-expander" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+  <span class="sr-only">
+  </span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+  
+  
+  <div class="ttr_menushape1">
+    <div class="html_content">
+      <a href="https://apperta.org/IXNfortheNHS/" target="_blank"><img class="ttr_uniform" src="images/IXNNHS.JPG" style="max-width:200px;max-height:304px; position: inherit" /></a>
+    </div>
+  </div>  
+  <div class="menu-center collapse navbar-collapse">
+     <ul class="ttr_menu_items nav navbar-nav navbar-right">
+      <li class="ttr_menu_items_parent dropdown active">
+        <a href="https://apperta.org/IXNfortheNHS/" target="_blank" class="ttr_menu_items_parent_link_active dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon" ></span>IXNforNHS</a>
+       </li>
+       <li class="ttr_menu_items_parent dropdown active">
+          <a href="index.html" class="ttr_menu_items_parent_link_active dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon" ></span>Home</a>
+      <ul class="dropdown-menu">
+        <li><a href="index.html#abstract">Abstract</a></li>
+        <li><a href="index.html#video">Project Video</a></li>
+        <li><a href="index.html#timeline">Project Timeline</a></li>
+        <li><a href="index.html#team">Team Members</a></li>
+      </ul>
     </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="design.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Design</a>
-        <hr class ="horiz_separator"/>
-     </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="implementation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Impl.</a>
-        <hr class ="horiz_separator"/>
-     </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="testing.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Testing</a>
-       <hr class ="horiz_separator"/>
-    </li>
-     <li class="ttr_menu_items_parent dropdown"><a href="evaluation.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Eval.</a>
-     <hr class ="horiz_separator"/>
-     </li>
-     <!-- <li class="ttr_menu_items_parent dropdown"><a href="services.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Services</a>
-     <hr class ="horiz_separator"/>
-     </li> -->
-     <li class="ttr_menu_items_parent dropdown"><a href="appendix.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Appendix</a>
-     <hr class ="horiz_separator"/>
-     </li>
-     <!-- <li class="ttr_menu_items_parent dropdown"><a href="contact.html" class="ttr_menu_items_parent_link"><span class="menuchildicon"></span>Contact</a>
-     <hr class ="horiz_separator"/>
-     </li> -->
-     </ul>
-</div>
-</div>
-</div>
+      <li class="ttr_menu_items_parent dropdown active">
+          <a href="requirements.html" class="ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Reqs.</a>
+        <ul class="dropdown-menu">
+          <li><a href="requirements.html#projback">Project Background</a></li>
+          <li><a href="requirements.html#clientrequirements">Client Requirements</a></li>
+          <li><a href="requirements.html#projectgoal">Project Goal</a></li>
+          <li><a href="requirements.html#UserInt">User Interviews</a></li>  
+          <li><a href="requirements.html#personas">User Personas</a></li>
+          <li><a href="requirements.html#usecase">Use Cases</a></li>
+          <li><a href="requirements.html#MoSCoW">MoSCoW List</a></li>  
+        </ul>
+      </li>
+    <li class="ttr_menu_items_parent dropdown active">
+          <a href="UI.html" class=" ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>UI Design</a>
+        <ul class="dropdown-menu">
+          <li><a href="UI.html#desprinciples">Design Principles</a></li>
+          <li><a href="UI.html#sketches">Sketches</a></li>
+          <li><a href="UI.html#prototype">Prototypes</a> </li>
+          <li><a href="UI.html#hcievaluation">Evaluation</a></li>
+        </ul>
+      </li>
+      <li class="ttr_menu_items_parent dropdown active">
+          <a href="research.html" class="ttr_menu_items_parent_link_active dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Research</a>
+       <ul class="dropdown-menu">
+         <li><a href="research.html#projectresearch">Project Research</a></li>
+        <li><a href="research.html#techresearch">Technical Research</a></li>
+        <li><a href="research.html#techdec">Technical Decisions</a></li>
+        <li><a href="research.html#references">References</a> </li>
+  
+       </ul>
+      </li>
+       <li class="ttr_menu_items_parent dropdown active">
+          <a href="design.html" class="ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Sys. Design</a>
+        <ul class="dropdown-menu">
+          <li><a href="design.html#sysarc">System Architecture</a></li> 
+          <li><a href="design.html#sysdes">System Design</a></li>
+          <li><a href="design.html#testknow">Test Knowledge</a></li>
+          <li><a href="design.html#askq">Ask Questions</a></li>
+          <li><a href="design.html#viewscores">View Scores</a>  </li>
+          <li><a href="design.html#viewresources">View Resources</a> </li>
+          <li><a href="design.html#APIinteg">API Integration</a>  </li>
+        </ul>
+      </li>
+        <li class="ttr_menu_items_parent dropdown active">
+          <a href="implementation.html" class="ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Impl.</a>
+        <ul class="dropdown-menu">
+          <li><a href="implementation.html#devtools">Development Tools</a></li>
+          <li><a href="implementation.html#voiceflow">Voiceflow design </a></li>
+          <li><a href="implementation.html#userauth">User Authentication Design</a></li>
+          <li><a href="implementation.html#test">Test Knowledge Design</a> </li>
+          <li><a href="implementation.html#qna">Q & A Design</a>  </li>
+          <li><a href="implementation.html#checkscore">Score Check Design</a></li>
+          <li><a href="implementation.html#viewres">View Resources Design</a></li>
+          <li><a href="implementation.html#telebot">Telegram Bot Design</a> </li>
+        
+        </ul>
+      </li>
+        <li class="ttr_menu_items_parent dropdown active">
+          <a href="testing.html" class="ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Testing</a>
+       <ul class="dropdown-menu">
+        <li><a href="testing.html#teststrategy">Test Strategy</a></li>
+        <li><a href="testing.html#coveragetesting">Coverage Testing</a></li>
+        <li><a href="testing.html#integrationtesting">Integration Testing</a></li>
+        
+       </ul>
+      </li>
+        <li class="ttr_menu_items_parent dropdown active">
+          <a href="evaluation.html" class="ttr_menu_items_parent_link_active  dropdown-toggle" data-toggle="dropdown"><span class="menuchildicon"></span>Eval.</a>
+        
+        <ul class="dropdown-menu">
+          <li><a href="evaluation.html#moscoweval">MoSCoW Evaluation</a></li>
+          <li><a href="evaluation.html#indivcontrib">Individual Contribution</a></li>
+          <li><a href="evaluation.html#criteval">Critical Evaluation</a></li>
+          <li><a href="evaluation.html#futurework">Future Work</a>  </li>
+        </ul>
+      </li>
+        <li class="ttr_menu_items_parent dropdown active"><a href="appendix.html" class="ttr_menu_items_parent_link_active"><span class="menuchildicon"></span>Appendix</a>
+        </li>
+        </ul>
+  </div>
+  </div>
+  </div>
+  </div>
 </nav>
+
 <header id="ttr_header">
 <div id="ttr_header_inner">
-<div class="ttr_headershape01">
-<div class="html_content"><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:4.286em;color:rgba(255,255,255,1);">Thanks for choosing </span><span style="font-family:'Ubuntu','Arial';font-size:4.286em;color:rgba(0,203,203,1);">Agency</span></p><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><br style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgba(255,101,1,1);" /></p><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgba(157,157,157,1);">To get the most out of your Agency, learn more about the latest features.</span></p></div>
-</div>
+
 <div class="ttr_headershape02">
 <div class="html_content"><p style="text-align:Center;"><span style="font-family:'Open Sans','Arial';font-size:2.857em;color:rgba(255,255,255,1);">Monthly Videos</span></p></div>
+
+<div class="html_content"><p style="margin:0.36em 0em 0.36em 1.43em;text-align:Center;"><span style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgb(250, 246, 246);"><a href="index.html" style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgb(250, 246, 246);">Home</a> &#8594 <a href="appendix.html" style="font-family:'Ubuntu','Arial';font-size:1.143em;color:rgb(250, 246, 246);"> Appendix</a> &#8594 Monthly Videos</span></p></div>
 </div>
 </div>
 </header>
@@ -127,7 +166,6 @@ $(window).load(function() {
 
 <div class="ag-timeline-block">
   <div class="ag-timeline_title-box">
-    <!-- <div class="ag-timeline_tagline">Timeline</div> -->
     <div class="ag-timeline_title">Monthly Timeline</div>
   </div>
   <section class="ag-section">
@@ -143,34 +181,30 @@ $(window).load(function() {
                 <div class="ag-timeline-card_point">2021</div>
               </div>
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">15 November - 15 December</div>
+                <div class="ag-timeline-card_meta">December</div>
               </div>
             </div>
             <div class="ag-timeline-card_item">
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <video width="320" height="240" controls>
-                    <source src="video/pitch.mp4" type="video/mp4">
-                    <source src="video/pitch.ogg" type="video/ogg">
+                    <source src="video/PRIDAR chatbot December video.mp4" type="video/mp4">
+                    <source src="video/PRIDAR chatbot December video.mp4" type="video/ogg">
                   Your browser does not support the video tag.
                   </video>
                 
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Nov - Dec </div>
-                  <div class="ag-timeline-card_desc">
-                    We began our project by fulfilling the HCI components. To begin, we conducted interviews for potential users of our chatbot. Using the information collected, we worked on creating personas and prototypes for the interface of our chatbot.
-                  </div>
                 </div>
               </div>
               <div class="ag-timeline-card_arrow"></div>
             </div>
           </div>
 
+          
+          
           <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">January</div>
+                <div class="ag-timeline-card_meta">Pitch</div>
                 <div class="ag-timeline-card_desc">
                     </div>
               </div>
@@ -183,16 +217,10 @@ $(window).load(function() {
                 <div class="ag-timeline-card_img-box">
                   <video width="320" height="240" controls>
                     <source src="video/pitch.mp4" type="video/mp4">
-                    <source src="video/pitch.ogg" type="video/ogg">
+                    <source src="video/pitch.mp4" type="video/ogg">
+                    
                   Your browser does not support the video tag.
                   </video>
-                  <!-- <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="ag-timeline-card_img" width="640" height="360" alt="" /> -->
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Jan</div>
-                  <div class="ag-timeline-card_desc">
-                    We implemented the login system to be used for our chatbot. We also began developing the website for our project.
-                  </div>
                 </div>
               </div>
               <div class="ag-timeline-card_arrow"></div>
@@ -204,42 +232,30 @@ $(window).load(function() {
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
                 <div class="ag-timeline-card_point">2022</div>
               </div>
+              <div class="ag-timeline-card_meta-box">
+                <div class="ag-timeline-card_meta">January</div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">
+                  <video width="320" height="240" controls>
+                    <source src="video/PRIDAR chatbot January video.mp4" type="video/mp4">
+                    <source src="video/PRIDAR chatbot January video.mp4" type="video/ogg">
+                    
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
+
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
               <div class="ag-timeline-card_meta-box">
                 <div class="ag-timeline-card_meta">February</div>
               </div>
-            </div>
-            <div class="ag-timeline-card_item">
-              <div class="ag-timeline-card_inner">
-                <div class="ag-timeline-card_img-box">
-                  <video width="320" height="240" controls>
-                    <source src="video/pitch.mp4" type="video/mp4">
-                    <source src="video/pitch.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                  </video>
-                  <!-- <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-11.png" class="ag-timeline-card_img" width="640" height="360" alt="" /> -->
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Feb</div>
-                  <div class="ag-timeline-card_desc">
-                    Aenean imperdiet. Etiam ultricies
-                    nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                    adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-                    hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-                    sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
-                    eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-                  </div>
-                </div>
-              </div>
-              <div class="ag-timeline-card_arrow"></div>
-            </div>
-          </div>
-
-          <div class="js-timeline_item ag-timeline_item">
-            <div class="ag-timeline-card_box">
-              <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">March</div>
-              </div>
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
                 <div class="ag-timeline-card_point">2022</div>
               </div>
@@ -248,29 +264,39 @@ $(window).load(function() {
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <video width="320" height="240" controls>
-                    <source src="video/pitch.mp4" type="video/mp4">
-                    <source src="video/pitch.ogg" type="video/ogg">
+                    <source src="video/PRIDAR chatbot February video.mp4" type="video/mp4">
+                    <source src="video/PRIDAR chatbot February video.mp4" type="video/ogg">
+                    
                   Your browser does not support the video tag.
                   </video>
-                  <!-- <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-10.png" class="ag-timeline-card_img" width="640" height="360" alt="" /> -->
-                </div>
-                <div class="ag-timeline-card_info">
-                  <div class="ag-timeline-card_title">Mar</div>
-                  <div class="ag-timeline-card_desc">
-                    Cum sociis natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                    venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                    tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                  </div>
                 </div>
               </div>
               <div class="ag-timeline-card_arrow"></div>
             </div>
           </div>
 
-        
+          <div class="js-timeline_item ag-timeline_item">
+            <div class="ag-timeline-card_box">
+              <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                <div class="ag-timeline-card_point">2022</div>
+              </div>
+              <div class="ag-timeline-card_meta-box">
+                <div class="ag-timeline-card_meta">March</div>
+              </div>
+            </div>
+            <div class="ag-timeline-card_item">
+              <div class="ag-timeline-card_inner">
+                <div class="ag-timeline-card_img-box">
+                  <video width="320" height="240" controls>
+                    <source src="video/PRIDAR chatbot March video.mp4" type="video/mp4">
+                    <source src="video/PRIDAR chatbot March video.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="ag-timeline-card_arrow"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -278,122 +304,6 @@ $(window).load(function() {
 </div>
 
 
-<script>
-  (function ($) {
-  $(function () {
-
-
-    $(window).on('scroll', function () {
-      fnOnScroll();
-    });
-
-    $(window).on('resize', function () {
-      fnOnResize();
-    });
-
-
-    var agTimeline = $('.js-timeline'),
-      agTimelineLine = $('.js-timeline_line'),
-      agTimelineLineProgress = $('.js-timeline_line-progress'),
-      agTimelinePoint = $('.js-timeline-card_point-box'),
-      agTimelineItem = $('.js-timeline_item'),
-      agOuterHeight = $(window).outerHeight(),
-      agHeight = $(window).height(),
-      f = -1,
-      agFlag = false;
-
-    function fnOnScroll() {
-      agPosY = $(window).scrollTop();
-
-      fnUpdateFrame();
-    }
-
-    function fnOnResize() {
-      agPosY = $(window).scrollTop();
-      agHeight = $(window).height();
-
-      fnUpdateFrame();
-    }
-
-    function fnUpdateWindow() {
-      agFlag = false;
-
-      agTimelineLine.css({
-        top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
-        bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
-      });
-
-      f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
-    }
-
-    function fnUpdateProgress() {
-      var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
-
-      i = agTop + agPosY - $(window).scrollTop();
-      a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
-      n = agPosY - a + agOuterHeight / 2;
-      i <= agPosY + agOuterHeight / 2 && (n = i - a);
-      agTimelineLineProgress.css({height: n + "px"});
-
-      agTimelineItem.each(function () {
-        var agTop = $(this).find(agTimelinePoint).offset().top;
-
-        (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
-      })
-    }
-
-    function fnUpdateFrame() {
-      agFlag || requestAnimationFrame(fnUpdateWindow);
-      agFlag = true;
-    }
-
-
-  });
-})(jQuery);
-
-  $(document).ready(function () {
-  var mySwiper = new Swiper(".swiper", {
-    autoHeight: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    speed: 500,
-    direction: "horizontal",
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar"
-    },
-    loop: false,
-    effect: "slide",
-    spaceBetween: 30,
-    on: {
-      init: function () {
-        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-        $(".swiper-pagination-custom .swiper-pagination-switch").eq(0).addClass("active");
-      },
-      slideChangeTransitionStart: function () {
-        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-        $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
-      }
-    }
-  });
-  $(".swiper-pagination-custom .swiper-pagination-switch").click(function () {
-    mySwiper.slideTo($(this).index());
-    $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-    $(this).addClass("active");
-  });
-});
-</script>
-
-
-
-<div style="height:0px;width:0px;overflow:hidden;"></div>
-<!-- </div> -->
 <footer id="ttr_footer">
   <div id="ttr_footer_inner">
  <div class="ttr_footer-widget-cell_inner_widget_container">
@@ -402,7 +312,9 @@ $(window).load(function() {
  <div class="footercellcolumn1">
  <div class="html_content"><h4 style="margin:16px 0px 0px 0px;line-height:2.02em;"><span style="font-weight:900;font-size:1.158em;color:rgba(243,243,243,1);">Site Info</span></h4>
    <p style="line-height:1.93em;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);">This is the website for UCL Year2 2021-2022 COMP0016 Team-10: PRIDAR, which introduces the team project and contains all the portfolios.</span></p></div>
- 
+   <h4 style="margin:16px 0px 0px 0px;line-height:2.02em;"><span style="font-weight:900;font-size:1.158em;color:rgba(243,243,243,1);">Website</span></h4>
+   <p style="line-height:1.93em;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);">Designed by Linta Rahman</span>
+  </p><p style="line-height:1.93em;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);">Get in touch <a href="mailto:lintarahman22@gmail.com"><img src="images/mail.gif" style=" border-radius: 30%; width: 25px;"></a></p>
  </div>
  </div>
 
@@ -430,7 +342,7 @@ $(window).load(function() {
 <div class="post_column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 col-12">
  <div class="footercellcolumn3">
  <div class="html_content"><h4 style="line-height: normal;"><span style="font-weight:900;color:rgba(243,243,243,1);">Project Supporters</span></h4>
-   <a href="https://www.nhs.uk/" target="_blank"><img class="ttr_uniform" src="images/footnhs.jpeg" width="100" /></a>
+   <a href="https://apperta.org/IXNfortheNHS/" target="_blank"><img class="ttr_uniform" src="images/IXNNHS.JPG" width="100" /></a>
    <a href="https://www.ucl.ac.uk/" target="_blank"><img class="ttr_uniform" src="images/ucl.jpg" width="130" /></a>
 <p style="line-height:1.65em;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);">A lot of thanks to our company partner </span></p><p style="line-height:1.65em;"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);">NHS and Dr. Joseph Connor especially.</span></p>
  </div>
@@ -445,9 +357,9 @@ $(window).load(function() {
          <div class="column">
        <p><a href="index.html"><img class="footerIcons" src="images/home.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> Home</span> </a></p>
        <p><a href="requirements.html"><img class="footerIcons" src="images/req.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> Requirements</span> </a></p>
-       <p><a href="UI.html"><img class="footerIcons" src="images/hci.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> HCI</span></a></p>
+       <p><a href="UI.html"><img class="footerIcons" src="images/hci.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> UI Design</span></a></p>
        <p><a href="research.html"><img class="footerIcons" src="images/res.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> Research</span></a></p>
-       <p><a href="design.html"><img class="footerIcons" src="images/design.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> Design</span></a></p>
+       <p><a href="design.html"><img class="footerIcons" src="images/design.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> System Design</span></a></p>
        </div>
        <div class="column">
        <p><a href="implementation.html"><img class="footerIcons" src="images/impl.png"><span style="font-family:'Open Sans','Arial';font-size:1.071em;color:rgb(253, 252, 252);"> Implementation</span></a></p>
